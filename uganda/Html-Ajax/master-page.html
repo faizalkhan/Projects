@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>MoESTS | Inspection Information System</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/green.css">
+<style>
+.current-active
+{
+	background-color: #00c0ef;
+	color:#fff;
+}
+.current-active li a
+{
+
+	color:#fff;
+}
+.skin-blue .treeview-menu > li > a
+{
+	color:#fff;
+}
+</style>
+</head>
+<body class="skin-blue sidebar-mini">
+<div class="wrapper">
+  <header class="main-header"> 
+    <!-- Logo --> 
+    <a href="#" class="logo"> 
+    <!-- mini logo for sidebar mini 50x50 pixels --> 
+    <span class="logo-mini"><img src="images/logo-mini.png" width="40" height="43" alt=""/></span> 
+    <!-- logo for regular state and mobile devices --> 
+    <span class="logo-lg"> <img src="images/logo.png" width="178" height="48" alt=""/></span> </a>
+    <nav class="navbar navbar-static-top" role="navigation"> 
+      <!-- Sidebar toggle button--> 
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown user user-menu"> <a aria-expanded="false" href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="images/user2-160x160.jpg" class="user-image" alt="User Image"> <span class="hidden-xs">David John <i class="fa fa-sign-out"></i></span> </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header"> <img src="images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <p> David John - Web Developer <small>Member since Nov. 2016</small> </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left"> <a href="#" class="btn btn-default btn-flat">Profile</a> </div>
+                <div class="pull-right"> <a href="#" class="btn btn-default btn-flat">Sign out</a> </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side div starts here -->
+  <aside class="main-sidebar"> 
+       <section style="height: auto;" class="sidebar">        
+      <!-- sidebar menu div starts here -->
+      <ul class="sidebar-menu">
+        <li><a href="#" class="inspection-schedule"><i class="fa fa-calendar"></i> <span>Inspections Schedule</span></a></li>
+        <li class="treeview"> <a href="#"> <i class="fa fa-pencil-square-o"></i> <span>Inspection Forms</span> <i class="fa fa-angle-left pull-right"></i> </a>
+          <ul style="display: none;" class="treeview-menu">
+            <li><a href="#" class="template">Add Templates </a></li>
+            <li><a href="#" class="view-template">View Form Templates </a></li>
+             <li><a href="#" class="viewsubmitted"> View Submitted Forms</a></li>
+          </ul>
+        </li>
+        <li class="treeview"> <a href="#"> <i class="fa fa-user"></i> <span>Manage User</span> <i class="fa fa-angle-left pull-right"></i> </a>
+          <ul style="display: none;" class="treeview-menu">
+             <li><a href="#" class="view-user-list">View Users</a></li>
+            <li><a href="#" class="add-user">Add Users</a></li>
+            <li ><a href="#" class="user-roles"> User Roles</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="reports"><i class="fa fa-book"></i> <span>Reports</span></a></li>
+      </ul>
+    </section>
+    <!-- sidebar menu div ends here --> 
+  </aside>
+   <!-- Left side div ends here -->
+ <div style="min-height: 976px;" class="content-wrapper"> <!-- Content Header Div starts here-->
+
+    <section class="content"> <!-- content div starts here -->
+    
+    </section><!--content div ends here --> 
+    
+  </div><!-- Content Header Div Ends here-->
+
+  <footer class="main-footer"><!-- footer  div starts here -->
+     <p>©2016 <a href="http://www.impigertech.com/">Impiger Technologies</a> All rights reserved. </p>
+    </footer><!-- footer  div ends here -->
+  <div style="position: fixed; height: auto;" class="control-sidebar-bg"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/myscript.js"></script>
+<script src="js/icheck.js"></script>
+<script src="js/jquery.inputmask.js"></script> 
+<script>
+$(document).ready(function() {
+    	
+	$(document).on('click', '.download', function(e)
+	{
+    
+		if($(this).hasClass('fa-download'))
+		{
+			$(this).removeClass('fa-download').addClass('download-off');
+		}
+		else
+		{
+			$(this).removeClass('download-off').addClass('fa-download');
+		}
+   event.preventDefault();
+	});
+	
+});
+</script>
+<script>
+$(document).ready(function() {
+    
+	$(document).on('click', '.views', function(e)
+	{
+	event.preventDefault();
+		if($(this).hasClass('fa-share-square-o'))
+		{
+			$(this).removeClass('fa-share-square-o').addClass('publish-off');
+		}
+		else
+		{
+			$(this).removeClass('publish-off').addClass('fa-share-square-o');
+		}
+		 	
+	});
+	
+});
+</script>
+<script>
+$(document).ready(function(e) {
+ $(document).on('click', '.resetpass', function(e)
+{
+ if ($(this).hasClass('fa-envelope') ) {
+  $(this).removeClass('fa-envelope').addClass('fa-envelope-o');
+	 
+   }
+else
+	{
+		  $(this).removeClass('fa-envelope-o').addClass('fa-envelope');
+	}
+
+ event.stopPropagation();	
+}); 
+});
+
+</script>
+<script>
+  $(function () {  
+   
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass: 'iradio_minimal-blue'
+    });
+    //Red color scheme for iCheck
+    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+      checkboxClass: 'icheckbox_minimal-red',
+      radioClass: 'iradio_minimal-red'
+    });
+    //Flat red color scheme for iCheck
+    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+      checkboxClass: 'icheckbox_flat-green',
+      radioClass: 'iradio_flat-green'
+    });
+ });
+</script>
+
+
+
+<script>
+$(document).ready(function(e) {
+    $('.treeview-menu li').on('click', function()
+	{
+		 $('.treeview-menu li.current-active').removeClass('current-active');
+		
+		$(this).addClass('current-active');
+	});
+});
+</script>
+
+<script>
+$(document).ready(function(e) {
+    $('.sidebar-menu li').on('click', function()
+	{
+		 
+		 $('.sidebar-menu li.active').removeClass('active');
+		
+	$(this).first().addClass('active');
+	});
+});
+
+</script>
+
+<script>
+//$(document).ready(function(){
+//    $(document).on('click', '.viewfaizal', function(){
+//		alert("hello");
+//        $(".content").load("viewusers.html");
+//    });
+//});
+</script>
+<script>
+$(document).ready(function(){
+	confirmation.init();
+	 });
+</script>
+<script> 
+    var confirmation = {
+		
+     init: function() {
+	 $(".inspection-schedule").click(this.inspectionschedule);
+     $(".template").click(this.addtemplate);
+	 $(".view-template").click(this.viewtemplate);
+	 $(document).on('click', '.viewsubmitted', this.viewsubmitted);
+	 $(".view-user-list").click(this.viewuser);
+	 $(".add-user").click(this.adduser);
+	 $(".user-roles").click(this.userroles);
+	 $(".reports").click(this.reports);
+	 $(document).on('click','.viewusers',this.viewusers);
+	 $(document).on('click','.editusers',this.editusers);
+	 $(document).on('click','.viewform',this.viewforms); 
+ 
+ },
+ 
+ viewusers:function()
+	 {	 $.ajax({url: "viewusers.html",
+ success:function(response)	{ $('.content').html(response);},
+    });
+	 },
+	 
+	 
+	  editusers:function()
+	 {	 $.ajax({url: "editusers.html",
+ success:function(response)	{ $('.content').html(response);},
+    });
+	 },
+	
+	 	  viewforms:function()
+	 {	 $.ajax({url: "view-submitted-form-2.html",
+ success:function(response)	{ $('.content').html(response);},
+    });
+	 },
+	 
+	 inspectionschedule:function()
+	 {
+	 $.ajax({url: "inspection-schedule.html",
+	 success:function(response)	{ $('.content').html(response);},
+     });
+	 },	
+	 addtemplate:function()
+	 {
+	 $.ajax({url: "add-templates.html",
+	 success:function(response)	{ $('.content').html(response);},
+     });
+	 },				 
+	 viewtemplate:function()
+	{
+	 $.ajax({url: "view-form-templates.html",
+	 success:function(response)	{ $('.content').html(response);},
+     });
+	 },
+	 viewsubmitted:function()
+	{
+	 $.ajax({url: "view-submitted-form-1.html",
+	 success:function(response)	{ $('.content').html(response);},
+     });
+	},
+	viewuser:function()
+	{
+	 $.ajax({url: "view-user-list.html",
+	 success:function(response)	{ $('.content').html(response);},
+     });
+	},
+	adduser:function()
+	{
+	 $.ajax({url: "addusers.html",
+	 success:function(response)	{ $('.content').html(response);},
+     });
+	},
+	userroles:function()
+	{
+	 $.ajax({url: "user-roles.html",
+	 success:function(response)	{ $('.content').html(response);},
+     });
+	},
+		reports:function()
+	{
+	 $.ajax({url: "reports.html",
+	 success:function(response)	{ $('.content').html(response);},
+     });
+	}
+	}
+</script>
+</body>
+</html>
