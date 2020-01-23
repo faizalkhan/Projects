@@ -1,0 +1,695 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>ACI</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/green.css">
+<link rel="stylesheet" href="css/dataTables.bootstrap.css">
+<link rel="stylesheet" href="css/datepicker3.css">
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css">
+
+</head>
+<body class="skin-blue sidebar-collapse">
+<div class="wrapper">
+  <header class="main-header"> 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="images/aci-logo.jpg" width="153" height="50" alt=""/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li ><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      
+       <li><a href="listing.html">Projects</a></li>
+       <li class="active"><a href="task-list.html">Tasks</a></li>
+        
+      
+ 
+        
+      </ul>
+      
+    
+      <ul class="nav navbar-nav">
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-th"></span> Site </a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings </a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
+      <li class="dropdown user user-menu"> <a aria-expanded="false" href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="images/user2-160x160.jpg" class="user-image" alt="User Image"> <span class="hidden-xs">Lee Martin <i class="fa fa-sign-out"></i></span> </a>
+            
+          </li>
+    </ul>
+  
+    </div>
+  </div>
+</nav>
+  </header>
+  
+  <div class="content-wrapper"> 
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+     
+      <ol class="breadcrumb">
+    
+      
+        
+      </ol>
+    </section>
+    
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+     
+            <div class="col-md-12">
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title"> Task List</h3>
+              <div class="pull-right">
+               <button  class="btn btn-primary">Export To Excel &nbsp;  <i class="fa fa-file-excel-o" style="font-size:18px"></i></button> &nbsp;&nbsp;
+              <i class="fa fa-plus-circle" aria-hidden="true"></i> <a href="gantt-view.html"> Gantt View  &nbsp;  </a>
+  <i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;   <a href="new-task.html"> New Task </a>  </div>   
+              
+            </div>
+             <div class="viewform-wrappers">
+     
+                    
+                    <table id="project-list" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+      
+          <thead>
+            <tr>
+                <th width="11%">Project Code</th>
+              
+                <th width="16%">Task Name</th>
+                <th width="15%">Meeting</th>
+                <th width="13%">Assignee</th>
+                <th width="14%">Due Date</th>
+                <th width="14%">Status</th>
+                <th width="17%">% Completion</th>
+            </tr>
+            
+            
+              <tr>
+                <th width="11%">Project Code</th>
+           
+                <th width="16%">Task Name</th>
+                <th width="15%">Meeting</th>
+                <th width="13%">Assignee</th>
+                 <th width="14%">Due Date</th>
+                <th width="14%">Status</th>
+                 <th width="17%" >% Completion</th>
+            </tr>
+        </thead>
+        
+
+          
+        <tbody>
+        
+        
+            <tr>
+          
+          
+                    <td>MKDB01</td>
+                     
+                          <td onclick="location.href='task.html'" style="cursor:pointer">Ad hoc - Submit Contact Details</td>
+                           <td>Ad hoc</td>
+                            <td>James </td>
+                            <td>30-May-2016</td>
+                            <td>Completed</td>
+                            <td>100</td>  
+                             
+            </tr>
+            <tr>
+                         <td >MKDB02</td>
+                         
+                          <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting </td>
+                           <td>Kick-Off </td>
+<td>Paul</td>
+                             <td>30/May/2016</td>
+                            <td>Overdue</td>
+                            <td>40</td>
+                     
+            </tr>
+            <tr>
+                    <td>MKDB03</td>
+                         
+                          <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting </td>
+                           <td>Kick-Off </td>
+<td>Paul</td>
+                             <td>30-May-2016</td>
+                            <td>Not Started</td>
+                            <td>30 </td>
+                             
+            </tr>
+            <tr>
+                <td>MKDB04</td>
+              
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting </td>
+                <td>Kick-Off </td>
+<td>David</td>
+                  <td>30-May-2016</td>
+                <td>Completed</td>
+                <td>100</td>
+                                     
+            </tr>
+            <tr>
+                <td>MKDB05</td>
+            
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting</td>
+                <td>Introductory</td>
+<td>Robert</td>
+                <td>01-Jun-2016 </td>
+                <td>Overdue</td>
+              <td> 50 </td>  
+            </tr>
+            <tr>
+                <td>MKDB06</td>
+              
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting</td>
+                <td>Kick-Off </td>
+<td>Jim</td>
+                <td>20-Jul-2016 </td>
+                <td>Not Started</td>
+                  <td>0  </td> 
+            </tr>
+            <tr>
+                <td>MKDB07</td>
+              
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting</td>
+                <td>Kick-Off </td>
+<td>Paul</td>
+                <td>02-Jun-2016 </td>
+                <td>Completed</td>
+                  <td>100 </td> 
+            </tr>
+            <tr>
+                <td>MKDB08</td>
+              
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting </td>
+                <td>Introductory</td>
+<td>Paul</td>
+                <td>01-Jun-2016 </td>
+                <td>Overdue</td>
+                  <td> 50 </td> 
+            </tr>
+            <tr>
+                <td>MKDB09</td>
+           
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting </td>
+                <td>Kick-Off </td>
+<td>James </td>
+                <td>28-Jun-2016 </td>
+                <td>Not Started</td>
+                  <td>0</td> 
+            </tr>
+            <tr>
+                <td>MKDB10</td>
+             
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting </td>
+                <td>Kick-Off </td>
+<td>Robert</td>
+                <td>05-Jun-2016</td>
+                <td>Completed</td>
+                  <td>100</td> 
+            </tr>
+            <tr>
+                <td>MKDB11</td>
+             
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Approve minutes- Kick-Off Meeting</td>
+                <td>Introductory</td>
+<td>James </td>
+                <td>10-Jan-2016</td>
+                <td>Completed</td>
+                  <td>100</td> 
+            </tr>
+            <tr>
+                <td>MKDB12</td>
+          
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting </td>
+                <td>Kick-Off </td>
+<td>Paul</td>
+                <td>11-Jun-2016</td>
+                <td>Completed</td>
+                  <td>100</td> 
+            </tr>
+            <tr>
+                <td>MKDB13</td>
+                
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting </td>
+                <td>Kick-Off </td>
+<td>James </td>
+                <td>12-Jun-2016</td>
+                <td>Completed</td>
+                  <td>100</td> 
+            </tr>
+            <tr>
+                <td>MKDB14</td>
+        
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Approve minutes- Kick-Off Meeting </td>
+                <td>Introductory</td>
+<td>James </td>
+                <td>25-Jun-2016</td>
+                <td>Not Started</td>
+                  <td>0</td> 
+            </tr>
+            <tr>
+                <td>MKDB15</td>
+         
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Approve minutes- Kick-Off Meeting</td>
+                <td>Kick-Off </td>
+<td>Paul</td>
+                <td>23-Jun-2016</td>
+                <td>Not Started</td>
+                  <td>0</td> 
+            </tr>
+            <tr>
+                <td>MKDB16</td>
+      
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Approve minutes- Kick-Off Meeting </td>
+                <td>Kick-Off </td>
+<td>James </td>
+                <td>24-Jun-2016</td>
+                <td>Not Started</td>
+                  <td>0</td> 
+            </tr>
+            <tr>
+                <td>MKDB17</td>
+           
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Approve minutes- Kick-Off Meeting</td>
+                <td>Introductory</td>
+<td>David</td>
+                <td>25-Jun-2016</td>
+                <td>Not Started</td>
+                  <td>0</td> 
+            </tr>
+            <tr>
+                <td>MKDB18</td>
+       
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Approve minutes- Kick-Off Meeting</td>
+                <td>Kick-Off </td>
+<td>David</td>
+                <td>26-Jun-2016</td>
+                <td>Not Started</td>
+                <td>0</td> 
+            </tr>
+            <tr>
+                <td>MKDB19</td>
+     
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Approve minutes- Kick-Off Meeting</td>
+                <td>Introductory</td>
+<td>David</td>
+                <td>27-Jun-2016</td>
+                <td>Not Started</td>
+                  <td>0</td> 
+            </tr>
+            <tr>
+                <td>MKDB20</td>
+
+                <td onclick="location.href='task.html'" style="cursor:pointer">Kick-Off Upload Minutes  - Kick-Off Meeting </td>
+                <td>Kick-Off </td>
+<td>Jim</td>
+                <td>28-Jun-2016</td>
+                <td>Not Started</td>
+                <td>0</td> 
+            </tr>
+            
+            
+       
+      
+         
+            
+        
+        </tbody>
+    </table>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+                    
+                    
+                    
+         
+                    
+          </div>
+        </div>
+        
+        
+          
+      </div>
+      <!-- /.row --> 
+      
+         
+  
+      
+      
+    </section>
+    <!-- /.content --> 
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+      <p>©2016 <a href="http://www.aciclinical.com/">ACI</a> All rights reserved. </p>
+  </footer>
+  <div style="position: fixed; height: auto;" class="control-sidebar-bg"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+ 
+<script src="js/bootstrap.js"></script> 
+
+<script src="js/icheck.js"></script>
+<!--<script src="js/moment.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script> 
+
+<script>
+$('tr[data-href]').on("click", function() {
+    document.location = $(this).data('href');
+});
+</script>
+
+<script>
+ $(function() {
+$('.datetimepicker').datetimepicker({
+format: 'DD/MM/YYYY'
+});
+});
+</script>
+
+<script src="js/jquery.dataTables.min.js"></script>
+
+
+<script src="js/daterangepicker.js"></script>
+
+
+  <script>
+
+
+
+        $(document).ready(function () {
+			
+			
+			
+            var table= $('#project-list').DataTable({
+		
+    "fnDrawCallback": function() {
+ $('th').each(function(){                
+ if (($(this).hasClass('sorting')) || ($(this).hasClass('sorting_desc')))  
+ {  
+    $(this).attr({title: 'Sort Ascending'});} 
+    else 
+    {
+    $(this).attr({title: 'Sort Descending'});
+    }
+ }); 
+ },
+     
+
+ "dom": '<"toolbar">frtip',
+
+
+                initComplete: function () {
+                    this.api().columns().every(function () {
+
+                        var column = this;
+                        var select = $('<select onclick="event.stopPropagation()"><option value="">Choose</option></select>')
+                            .appendTo($(column.header()).empty())
+                            .on('change', function () {
+                                var val = $.fn.dataTable.util.escapeRegex(
+                                    $(this).val()
+                                );
+
+                                column
+                                    .search(val ? '^' + val + '$' : '', true, false)
+                                    .draw();
+                            });
+
+                        column.data().unique().sort().each(function (d, j) {
+                            select.append('<option value="' + d + '">' + d + '</option>')
+                        });
+
+
+
+
+                    });
+
+                }
+
+
+               
+
+
+
+            });
+
+
+
+$("div.toolbar").html(' <div style="margin-left:10px; margin-top:25px"> Filter By Date Range : <input id="date_range" type="text"></div>');  
+//END of the data table
+
+// Date range script - Start of the sscript
+$("#date_range").daterangepicker({
+	autoUpdateInput: false,
+	locale: {
+		"cancelLabel": "Clear",
+        }
+});
+
+$("#date_range").on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('YYYY-MM-DD') + ' to ' + picker.endDate.format('YYYY-MM-DD'));
+	  table.draw();
+});
+
+$("#date_range").on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+	  table.draw();
+});
+// Date range script - END of the script
+
+
+
+
+
+
+
+
+
+$.fn.dataTableExt.afnFiltering.push(
+
+
+
+
+
+
+
+
+
+
+function( oSettings, aData, iDataIndex ) {
+	
+	var grab_daterange = $("#date_range").val();
+	var give_results_daterange = grab_daterange.split(" to ");
+    var filterstart = give_results_daterange[0];
+    var filterend = give_results_daterange[1];
+    var iStartDateCol = 4; //using column 2 in this instance
+    var iEndDateCol = 4;
+	
+	
+		
+   
+var tabledatestart= (aData[iStartDateCol]).replace(/-/g, '/');
+var tabledatestart = (getDate(tabledatestart)).format("mm/dd/yyyy");
+var tabledateend= (aData[iEndDateCol]).replace(/-/g, '/');
+var tabledateend = (getDate(tabledateend)).format("mm/dd/yyyy");
+
+    if ( !filterstart && !filterend )
+    {
+        return true;
+    }
+    else if ((moment(filterstart).isSame(tabledatestart) || moment(filterstart).isBefore(tabledatestart)) && filterend === "")
+    {
+        return true;
+    }
+    else if ((moment(filterstart).isSame(tabledatestart) || moment(filterstart).isAfter(tabledatestart)) && filterstart === "")
+    {
+        return true;
+    }
+    else if ((moment(filterstart).isSame(tabledatestart) || moment(filterstart).isBefore(tabledatestart)) && (moment(filterend).isSame(tabledateend) || moment(filterend).isAfter(tabledateend)))
+    {
+        return true;
+    }
+    return false;
+}
+);
+});
+
+var dateFormat = function () {
+	var	token = /d{1,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZ]|"[^"]*"|'[^']*'/g,
+		timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[-+]\d{4})?)\b/g,
+		timezoneClip = /[^-+\dA-Z]/g,
+		pad = function (val, len) {
+			val = String(val);
+			len = len || 2;
+			while (val.length < len) val = "0" + val;
+			return val;
+		};
+
+	// Regexes and supporting functions are cached through closure
+	return function (date, mask, utc) {
+		var dF = dateFormat;
+
+		// You can't provide utc if you skip other args (use the "UTC:" mask prefix)
+		if (arguments.length == 1 && Object.prototype.toString.call(date) == "[object String]" && !/\d/.test(date)) {
+			mask = date;
+			date = undefined;
+		}
+
+		// Passing date through Date applies Date.parse, if necessary
+		if (date && typeof(date) === "string") {
+			var myDateArray = date.split("-");
+			date = new Date(myDateArray[0], myDateArray[1]-1, myDateArray[2]);				
+		}
+		else {
+			date = date ? new Date(date) : new Date;
+		}
+
+		if (isNaN(date)) throw SyntaxError("invalid date");
+
+		mask = String(dF.masks[mask] || mask || dF.masks["default"]);
+
+		// Allow setting the utc argument via the mask
+		if (mask.slice(0, 4) == "UTC:") {
+			mask = mask.slice(4);
+			utc = true;
+		}
+
+		var	_ = utc ? "getUTC" : "get",
+			d = date[_ + "Date"](),
+			D = date[_ + "Day"](),
+			m = date[_ + "Month"](),
+			y = date[_ + "FullYear"](),
+			H = date[_ + "Hours"](),
+			M = date[_ + "Minutes"](),
+			s = date[_ + "Seconds"](),
+			L = date[_ + "Milliseconds"](),
+			o = utc ? 0 : date.getTimezoneOffset(),
+			flags = {
+				d:    d,
+				dd:   pad(d),
+				ddd:  dF.i18n.dayNames[D],
+				dddd: dF.i18n.dayNames[D + 7],
+				m:    m + 1,
+				mm:   pad(m + 1),
+				mmm:  dF.i18n.monthNames[m],
+				mmmm: dF.i18n.monthNames[m + 12],
+				yy:   String(y).slice(2),
+				yyyy: y,
+				h:    H % 12 || 12,
+				hh:   pad(H % 12 || 12),
+				H:    H,
+				HH:   pad(H),
+				M:    M,
+				MM:   pad(M),
+				s:    s,
+				ss:   pad(s),
+				l:    pad(L, 3),
+				L:    pad(L > 99 ? Math.round(L / 10) : L),
+				t:    H < 12 ? "a"  : "p",
+				tt:   H < 12 ? "am" : "pm",
+				T:    H < 12 ? "A"  : "P",
+				TT:   H < 12 ? "AM" : "PM",
+				Z:    utc ? "UTC" : (String(date).match(timezone) || [""]).pop().replace(timezoneClip, ""),
+				o:    (o > 0 ? "-" : "+") + pad(Math.floor(Math.abs(o) / 60) * 100 + Math.abs(o) % 60, 4),
+				S:    ["th", "st", "nd", "rd"][d % 10 > 3 ? 0 : (d % 100 - d % 10 != 10) * d % 10]
+			};
+
+		return mask.replace(token, function ($0) {
+			return $0 in flags ? flags[$0] : $0.slice(1, $0.length - 1);
+		});
+	};
+}();
+
+// Some common format strings
+dateFormat.masks = {
+	"default":      "ddd mmm dd yyyy HH:MM:ss",
+	shortDate:      "m/d/yy",
+	mediumDate:     "mmm d, yyyy",
+	longDate:       "mmmm d, yyyy",
+	fullDate:       "dddd, mmmm d, yyyy",
+	shortTime:      "h:MM TT",
+	mediumTime:     "h:MM:ss TT",
+	longTime:       "h:MM:ss TT Z",
+	isoDate:        "yyyy-mm-dd",
+	isoTime:        "HH:MM:ss",
+	isoDateTime:    "yyyy-mm-dd'T'HH:MM:ss",
+	isoUtcDateTime: "UTC:yyyy-mm-dd'T'HH:MM:ss'Z'"
+};
+function getDate(dateString) {
+    var dateParts = dateString.split('/');
+    var month = dateFormat.i18n.monthNames.indexOf(dateParts[1]) % 12;
+    return new Date(parseInt(dateParts[2]), month, parseInt(dateParts[0]));
+}
+// Internationalization strings
+dateFormat.i18n = {
+	dayNames: [
+		"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
+		"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+	],
+	monthNames: [
+		"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+		"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+	]
+};
+
+// For convenience...
+Date.prototype.format = function (mask, utc) {
+	return dateFormat(this, mask, utc);
+};
+
+
+$(document).ready(function() {
+    $('select option').each(function()
+{
+ 
+    var myStr = $(this).text();
+ 
+    if(myStr.length > 30)
+ 
+ {
+  
+
+
+  
+  $(this).text(myStr.substring(0, 30) + "...");
+ 
+
+ }
+});
+
+
+});
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>ACI</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/green.css">
+<link rel="stylesheet" href="css/dataTables.bootstrap.css">
+<link rel="stylesheet" href="css/datepicker3.css">
+
+</head>
+<body class="skin-blue sidebar-collapse">
+<div class="wrapper">
+  <header class="main-header"> 
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="images/aci-logo.jpg" width="153" height="50" alt=""/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      
+      
+      
+       <li><a href="index.html">Home</a></li>
+       <li><a href="dashboard.html">Dashboard</a></li>
+      
+       <li><a href="listing.html">Projects</a></li>
+       <li class="active"><a href="task-list.html">Tasks</a></li>
+    
+        
+      </ul>
+      
+    
+      <ul class="nav navbar-nav">
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-th"></span> Site </a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings </a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
+      <li class="dropdown user user-menu"> <a aria-expanded="false" href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="images/user2-160x160.jpg" class="user-image" alt="User Image"> <span class="hidden-xs">Lee Martin <i class="fa fa-sign-out"></i></span> </a>
+            
+          </li>
+    </ul>
+  
+    </div>
+  </div>
+</nav>
+  </header>
+  
+  <div  class="content-wrapper"> 
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+     
+      <ol class="breadcrumb">
+    
+      
+        
+      </ol>
+    </section>
+    
+    <!-- Main content -->
+    <section class="content">
+
+      
+        
+      
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Active Project</a></li>
+       
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Switch To Different Project <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">MKDB01 </a></li>
+              <li role="separator" class="divider"></li>
+            <li><a href="#">MKDB02 </a></li>
+              <li role="separator" class="divider"></li>
+            <li><a href="#">MKDB03</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">MKDB04</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">MKDB05</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">MKDB06</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">MKDB07</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">MKDB08</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">MKDB09</a></li>
+                 <li role="separator" class="divider"></li>
+            <li><a href="#">MKDB10</a></li>
+          </ul>
+        </li>
+        
+      </ol>
+    
+           <div class="box box-info project-meeting">
+           
+             <div class="box-header box-headers">
+              <h3 class="box-title">Project Overview & Activity</h3>
+                
+              <div class="pull-right">
+                 <i class="fa fa-folder-open" aria-hidden="true"></i><a href="#">&nbsp; Upload Documents </a> &nbsp;|&nbsp; 
+               <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; 
+<a href="meeting.html"> New Meeting </a> &nbsp; | <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp;  <a href="new-task.html"> New  Task </a>   | 
+&nbsp; <i class="fa fa-globe" aria-hidden="true"></i>&nbsp;<a href="welcome-project.html"> External Site </a> </div>                
+                        
+            </div>
+            
+            
+          
+<div class="row">
+            <div class=" col-md-12">
+            
+            
+            
+            <div class="box-header with-border project-heading">
+              <h3 class="box-title"> <a href="project-meeting.html">Project</a></h3>
+            </div>
+           <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th width="11%"> Project Code</th>
+                      <th width="20%">Sponsor Name</th>
+                      <th width="18%">Project Phase</th>
+                      <th width="15%">Project Type</th>
+                      <th width="16%"> Project Start Date</th>
+                      <th width="20%"> Project End Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="odd" role="row">
+                      <td class="code" onclick="location.href='projectedit.html'"> MKDB01</td>
+                      <td class="code" onclick="location.href='sponsor-edit.html'">Sponsor -1</td>
+                      <td>Start up</td>
+                      <td>Admin Only</td>
+                      <td> 06-Feb-2016 </td>
+                      <td> 11-Dec-2018 </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+            
+            
+             <div class="box-header with-border project-heading">
+              <h3 class="box-title"> <a href="meetinglist.html">Upcoming Meetings</a></h3>
+            </div>
+         <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th width="11%">Date</th>
+                          <th width="20%"> Meeting</th>
+                          <th width="18%"> Prerequisite tasks</th>
+                          <th width="18%">Post meeting tasks</th>
+                          <th width="33%"> Overdue tasks</th>
+                          
+
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="odd" role="row" data-href="upcomingmeeting-1.html">
+                          <td>11-Jul-2016</td>
+                          <td>  Chair Safety Review </td>
+                          <td> 5</td>
+                      <td> 10</td>
+                           <td> 3</td>
+                 
+                        </tr>
+                        
+                        <tr class="even" role="row" data-href="upcomingmeeting-2.html">
+                             <td> 20-Aug-2016</td>
+                          <td> Blind Review</td>
+                          <td>3</td>
+                      <td> 5</td>
+                           <td> 1</td>
+                     
+                        </tr>
+                       
+                        
+                        <tr class="odd" role="row" data-href="upcomingmeeting-3.html">
+                              <td> 15-Sep-2016</td>
+                          <td>  DSMB Meeting</td>
+                          <td> 10</td>
+                      <td>5</td>
+                           <td> 1</td>
+                 
+                        </tr>
+                        
+                     
+                                   
+                                    
+                    
+                                          
+                                           
+                      </tbody>
+                    </table>
+                    </div>
+                    
+ </div>
+     <div class="row">
+            <div class="col-md-12">
+          
+            
+            
+            <div class="box-header with-border project-heading">
+              <h3 class="box-title"> <a href="meetinglist.html">Past Meetings</a></h3>
+            </div>
+            
+            
+         <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th width="11%">Date</th>
+                          <th width="20%"> Meeting</th>
+                          <th width="18%">Pending tasks</th>
+                          <th width="51%">Overdue tasks</th>
+                          
+
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="odd" role="row" data-href="pastmeeting-1.html">
+                          <td>01-Jun-2016</td>
+                          <td> Introductory</td>
+                          <td> 2</td>
+                      <td> 2</td>
+                 </tr>
+                        
+                        <tr class="even" role="row" data-href="pastmeeting-2.html">
+                             <td>31-May-2016</td>
+                          <td> Kick-Off</td>
+                          <td> 2</td>
+                      <td> 2</td>
+                     
+                        </tr>
+                       
+                        
+                        <tr class="odd" role="row" data-href="pastmeeting-3.html">
+                               <td>30-May-2016</td>
+                          <td>Introductory</td>
+                          <td> 2</td>
+                      <td> 2</td>
+                 
+                        </tr>
+                        
+                     
+                                   
+                                    
+                    
+                                          
+                                           
+                      </tbody>
+                    </table>
+                    </div>
+ </div>
+      
+        <div class="row">
+         <div class="col-md-12">
+                        <div class="box-header with-border project-heading">
+              <h3 class="box-title"> <a href="task-list.html">Upcoming Tasks</a></h3>
+            </div>
+            
+         <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th width="11%">Date</th>
+                          <th width="20%"> Meeting</th>
+                          <th width="20%">Task</th>
+                          <th width="18%">Assignee</th>
+                          <th width="31%">% Completion</th>
+                          
+
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="odd" role="row" data-href="task.html">
+                          <td>01-Jul-2016</td>
+                        <td> Introductory</td>
+                          <td> Kick-Off Upload Minutes  </td>
+                      <td> Martin</td>
+                       <td> 20%</td>
+                 </tr>
+                        
+                        <tr class="even" role="row" data-href="task.html">
+                       <td>25-Jul-2016</td>
+                       <td>Kick-Off</td>
+                          <td>Kick-Off approve Minutes</td>
+                      <td>  Peter</td>
+                       <td> 50%</td>
+                     
+                        </tr>
+                       
+                        
+                        <tr class="odd" role="row" data-href="task.html">
+                    <td> 30-Jun-2016 </td>
+                       <td>Kick-Off </td>
+                          <td> Kick-Off Upload Final Charter</td>
+                      <td> George</td>
+                       <td> 30%</td>
+                 
+                        </tr>
+                        
+                     
+                                   
+                                    
+                    
+                                          
+                                           
+                      </tbody>
+                    </table>
+                    </div>
+            
+            </div>
+            
+              <div class="row">
+            <div class="col-md-12">
+                        <div class="box-header with-border project-heading">
+              <h3 class="box-title overdue-task"> <a href="task-list.html">Overdue Tasks</a></h3>
+            </div>
+            
+         <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th width="11%">Date</th>
+                           
+                          <th width="20%">Task</th>
+                          <th width="18%">Assignee</th>
+                          <th width="31%">% Completion</th>
+                          
+
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="odd" role="row" data-href="task.html">
+                          <td>31-May-2016</td>
+                    
+                          <td> Kick-Off Upload Minutes  </td>
+                      <td> Paul</td>
+                       <td> 10%</td>
+                 </tr>
+                        
+                        <tr class="even" role="row" data-href="task.html">
+                       <td> 30-May-2016</td>
+                      
+                          <td>Kick-Off approve Minutes</td>
+                      <td> James</td>
+                       <td> 20%</td>
+                     
+                        </tr>
+                       
+                        
+                        <tr class="odd" role="row" data-href="task.html">
+                    <td> 29-May-2016 </td>
+                    
+                          <td>Kick-Off Upload Final SAP</td>
+                      <td> George</td>
+                       <td> 30%</td>
+                 
+                        </tr>
+                        
+                     
+                                   
+                                    
+                    
+                                          
+                                           
+                      </tbody>
+                    </table>
+                    </div>
+
+              </div>
+              
+               
+              
+              
+         
+          </div>
+   
+        <!-- /.col (left) --> 
+        
+      
+      <!-- /.row --> 
+      
+    </section>
+    <!-- /.content --> 
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+      <p>©2016 <a href="http://www.aciclinical.com/">ACI</a> All rights reserved. </p>
+  </footer>
+  <div style="position: fixed; height: auto;" class="control-sidebar-bg"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+  
+<script src="js/bootstrap.js"></script> 
+<script src="js/myscript.js"></script> 
+<script src="js/icheck.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+<script>
+$('tr[data-href]').on("click", function() {
+    document.location = $(this).data('href');
+});
+</script>
+
+</body>
+</html>
