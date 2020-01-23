@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="health" horiz-adv-x="1000" >
+<font-face font-family="health" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="three-tier-pyramid" unicode="&#xe800;" d="M360 543c-4 7-4 15 0 22l121 211c8 13 30 13 38 0l121-211c4-7 4-15 0-22-3-7-11-11-18-11h-244c-7 0-14 4-18 11z m-152-306h584c8 0 15 4 19 11 4 6 4 15 0 21l-106 184c-4 7-11 11-19 11h-372c-8 0-15-4-19-11l-106-184c-4-6-4-15 0-21 4-7 11-11 19-11z m789-290l-122 211c-3 6-11 11-18 11h-714c-7 0-15-5-18-11l-122-211c-4-7-4-15 0-22s11-11 19-11h956c8 0 15 5 19 11 4 7 4 15 0 22z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
