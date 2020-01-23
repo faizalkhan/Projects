@@ -1,0 +1,451 @@
+
+
+
+
+
+
+
+<iframe src="../16.8.2017/patient-details-group.html" width="100%" height="100%">
+
+file:///D:/Impiger/STX/Html/16.8.2017/patient-details-group.html
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>South Texas Dental - Family Dental Centers - Houston, Dallas, Fort Worth, San Antonio</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/green.css">
+<link rel="stylesheet" href="css/dataTables.bootstrap.css">
+<link rel="stylesheet" href="css/datepicker3.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+</head>
+<body class="skin-blue sidebar-collapse">
+<div class="wrapper">
+  <header class="main-header">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt=""/></a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Start a Call</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="listing.html">Call List</a></li>
+            <li><a href="task-list.html">Diposition</a></li>
+            <li><a href="task-list.html">Upload Call List</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div  class="content-wrapper"> 
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <ol class="breadcrumb">
+      </ol>
+    </section>
+    
+    <!-- Main content -->
+    <section class="content">
+      <div class="patient-wrapper box">
+        <div class="box-header with-border">
+          <h1 class="box-title">History</h1>
+        </div>
+        <div class="row row-eq-height">
+          <div class="col-md-4">
+         
+			  <h3> <span class="user svg-icon"> <img src="images/user.svg" alt=""/> </span>   (645) 852 - 7543 </h3>
+			  <small>Phone number </small>
+          </div>
+          <div class="col-md-4">
+            <h4>Mary Elizabeth </h4>
+            <small>First Name</small>
+          </div>
+          <div class="col-md-4">
+            <h4>Smith</h4>
+            <small>Last Name</small>
+          </div>
+        </div>
+        <div class="row row-eq-height">
+          <div class="col-md-4">
+            <p> Patient ID: <b> 1106 </b> </p>
+            <p>Campaign Name: <b> Master Check Up </b></p>
+            <p> Clinic Name: <b> ASL </b> </p>
+            <p> Subscriber ID: <b> CR1254 </b></p>
+          </div>
+          <div class="col-md-4">
+            <div class="disposition-wrapper">
+              <div class="form-group">
+                <label for="sel1">Disposition</label>
+                <select class="minimal form-control form-control-select" id="sel1">
+                  <option>Call Back</option>
+                  <option>Left Message</option>
+                  <option>Wrong</option>
+                  <option>Disconnect</option>
+                </select>
+              </div>
+              <div class="input-group date datetimepicker">
+                <input type="text" class="form-control"  value="DD-MM-YYYY" required name="meetingdate"  />
+                <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span> </span> </div>
+              <label for="meetingdate" class="error" >Please enter the meeting date </label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="comments-wrapper">
+              <div class="form-group">
+                <label for="comment">Note/Comments</label>
+                <textarea class="form-control" rows="5" placeholder="Enter your comment here..." id="comment"> </textarea>
+                
+             
+                
+              </div>
+              
+                  
+            </div>
+            
+            <div class="apply-wrapper checkbox icheck">
+            <label>
+              <input type="checkbox">Apply this disposition & notes to all in the group
+            </label>
+          </div>
+          </div>
+          
+         
+        </div>
+        
+        
+        <!-- /.col (left) -->
+        
+    
+        
+        
+        <div class="patient-wrapper groupdetails-wrapper history-wrapper box text-left">
+         
+         <div class="panel-group" id="accordion">
+        
+            
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a  data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                     Group Details 
+                     </a>
+                  </h4>
+               </div><!--/.panel-heading -->
+               <div id="collapseTwo" class="panel-collapse collapse in">
+                  <div class="panel-body">
+ 
+                    <!-- nested -->
+
+
+         <div class="panel-group" id="nested">
+         
+            <div class="panel panel-default">
+               <div class="panel-headings">
+               <h4 class="panel-title text-left">
+               <table width="100%">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Campaign Name</th>
+                     <th>Disposition</th>
+                    <th> Patient ID</th>
+               
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <tr>
+						<td> <a href="#" class="campaignname" > Mary Elizabeth Smith </a> </td>
+                    <td > 
+						<a data-toggle="collapse" data-parent="#nested" href="#nested-collapseOne"> Mary Elizabeth Smith                     </a>
+                    </td>                
+                    
+					  
+                    <td >Left Message</td>
+                     <td>1106 </td>
+                      <td >
+                    <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> </label>
+					  </td>
+                  </tr>
+                  </tr>
+                </thead>
+                </table>
+               
+               </h4>
+             </div><!--/.panel-heading -->
+               <div id="nested-collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                   <table width="39%" class="groupcampaign-wrapper">
+  <tbody>
+
+      <tr>
+      <td>Regular Health Campaign</td>
+      <td>Callback</td>
+    </tr>
+       <tr>
+      <td>Regular Health Campaign</td>
+       <td>Left Message</td>
+    </tr>
+  </tbody>
+</table>
+                  </div><!--/.panel-body -->
+               </div><!--/.panel-collapse --> 
+            </div><!-- /.panel --> 
+            
+            <div class="panel panel-default">
+               <div class="panel-headings">
+                  <h4 class="panel-title text-left">
+                  
+                   <table width="100%">
+               <tr >
+                   
+				   <td> <a href="#" class="campaignname" >Celine Jone </a></td>
+                   
+                    <td > 
+            
+                        
+                          <a  class="collapsed" data-toggle="collapse" data-parent="#nested" href="#nested-collapseTwo">
+                   Regular Health Campaign
+                     </a>
+                                                          
+                    </td>                
+                    
+                   <td >Left Message</td>
+					  <td>1107 </td>
+                    
+                      <td >
+                    <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> </label>
+					  </td>
+                  </tr>
+               </table>
+                  
+                 
+                  </h4>
+               </div><!--/.panel-heading -->
+               <div id="nested-collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     <table width="39%" class="groupcampaign-wrapper">
+  <tbody>
+    <tr>
+      <td>Campaign Name</td>
+      <td>Clinic Name</td>
+    </tr>
+      <tr>
+      <td>Master Health Campaign</td>
+      <td>ASL</td>
+    </tr>
+       <tr>
+      <td>Regular Health Campaign</td>
+      <td>ACE</td>
+    </tr>
+  </tbody>
+</table>
+                  </div><!--/.panel-body -->
+               </div><!--/.panel-collapse -->
+            </div><!-- /.panel -->
+            
+            <div class="panel panel-default">
+               <div class="panel-headings">
+                  <h4 class="panel-title text-left">
+                  
+                  <table width="100%">
+               <tr >
+				   <td><a href="#" class="campaignname" >BaleMark</a></td>
+                    <td > 
+                <a  class="collapsed" data-toggle="collapse" data-parent="#nested" href="#nested-collapseThree">
+                   Master Health Campaign
+                     </a>
+                        
+                     
+                                                          
+                    </td>                
+                    
+                         <td >Left Message</td>
+					  <td>1108 </td>
+               
+                      <td >
+                    <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> </label>
+					  </td>
+                  </tr>
+               </table>
+                  
+                
+                  
+                  
+                  </h4>
+               </div><!--/.panel-heading -->
+               <div id="nested-collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <table width="39%" class="groupcampaign-wrapper">
+  <tbody>
+    <tr>
+      <td>Campaign Name</td>
+      <td>Clinic Name</td>
+    </tr>
+      <tr>
+      <td>Master Health Campaign</td>
+      <td>ASL</td>
+    </tr>
+       <tr>
+      <td>Regular Health Campaign</td>
+      <td>ACE</td>
+    </tr>
+  </tbody>
+</table>
+                  </div><!--/.panel-body -->
+               </div><!--/.panel-collapse -->
+            </div><!-- /.panel -->
+         </div><!-- /.panel-group -->
+
+
+<!-- nested -->
+                    
+                     
+                  </div><!--/.panel-body -->
+               </div><!--/.panel-collapse -->
+            </div><!-- /.panel -->
+            
+           
+         </div><!-- /.panel-group -->
+         
+         
+
+       
+       <div class="box-footer no-border">
+     
+          <div class="pull-right">
+            <button class="btn btn-calldone" type="submit" data-toggle="modal" onClick="popup('#donewith-call')" >Done With a Call</button>
+            <button class="btn btn-primary btn-save" type="submit" data-toggle="modal" onClick="popup('#save')">Save</button>
+          </div>
+        </div>
+       
+        </div>
+        <div class="modal fade" id="donewith-call">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Done with a call</h4>
+              </div>
+              <div class="modal-body">
+                <p>You cannot make any modification on this patient details after you
+					complete the call.<br> Are you sure?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn calldone" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-default">Yes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        
+        
+        
+        <div class="modal fade" id="save">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+				  <div class="awesome-icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+              </div>
+              <div class="modal-body">
+				  <h2>Awesome!</h2>
+                <p>You have completed the call.</p>
+				  <button type="button" class="btn btn-default">NEXT PATIENT <i class="fa fa-fw fa-angle-right"></i></button>
+				  <p> <a href="#" data-dismiss="modal"> TAKE A BREAK </a>  </p>
+              </div>
+              
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        
+        
+        
+        <div class="patient-wrapper history-wrapper box text-left">
+          <div class="box-header history-heading">
+            <h1 class="box-title">History</h1>
+          </div>
+          <div class="row">
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Disposition</th>
+                    <th>Note/Comments</th>
+                    <th> Call center Agent Name</th>
+                    <th>Called date time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td width="20%">Left Message</td>
+                    <td  width="40%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</td>
+                    <td width="20%">Celine</td>
+                    <td width="20%">27/06/2017</td>
+                  </tr>
+                  <tr>
+                    <td>Left Message</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</td>
+                    <td>Celine</td>
+                    <td>27/06/2017</td>
+                  </tr>
+                  <tr>
+                    <td>Left Message</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</td>
+                    <td>Celine</td>
+                    <td>27/06/2017</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <!-- /.col (left) --> 
+        </div>
+      </div>
+      
+      <!-- /.row --> 
+      
+    </section>
+    <!-- /.content --> 
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <p>Copyright © 2017 <a href="#"> South Texas Dental </a>, Dr. Richard Ramsey. All Rights Reserved.</p>
+  </footer>
+  <div style="position: fixed; height: auto;" class="control-sidebar-bg"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> 
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script> 
+<script src="js/bootstrap-datetimepicker.min.js"></script> 
+<script src="js/icheck.js"></script>
+<script src="js/myScript.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    iCheckBg();
+});
+</script>
+    
+    
+</body>
+</html>
+</iframe>
