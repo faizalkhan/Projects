@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grundfos | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="css/dataTables.bootstrap.css">
+  
+  
+    <link rel="stylesheet" href="css/layout.css">
+  <!-- Font Awesome -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/datepicker3.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img src="images/mob-logo.png"  alt=""/></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="images/logo.png"  alt=""/></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+        
+       
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#">
+              <img src="images/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">GIN Service Head</span>
+            </a>
+            
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+        
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+ <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+       
+        <li class="treeview">
+          <a href="index.html">
+         <div class="menu-img"> <img src="images/home@24.png" width="24" height="24" alt=""/></div>
+            <span> Home </span>
+          <span class="pull-right-container">
+             
+          </span>
+          </a>
+          
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <div class="menu-img"><img src="images/complaints@24.png" width="24" height="24" alt=""/> </div>
+            <span>Complaints</span>
+            <span class="pull-right-container">
+             
+          </span>
+          </a>
+          
+        </li>
+        <li class="treeview">
+          <a href="#">
+          <div class="menu-img"><img src="images/escalation@24.png" width="24" height="24" alt=""/> </div>
+          <span>Escalations</span>
+            <span class="pull-right-container">
+              
+          </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+ 
+            <div class="menu-img"><img src="images/distributor@24.png" width="24" height="24" alt=""/></div> 
+            <span>Distributors</span>
+            
+          </a>
+          
+        </li>
+        <li class="active treeview">
+          <a href="#">
+            <div class="menu-img" > <img src="images/customer@24.png" width="24" height="24" alt=""/></div> 
+            <span>Customers</span>
+          
+          </a>
+          
+        </li>
+        <li class="treeview">
+          <a href="#">
+           <div class="menu-img"> <img src="images/rating@24.png" width="24" height="24" alt=""/></div>
+          <span>Rating</span>
+          </a>
+        </li>
+       
+    
+       
+  
+    
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+
+    <!-- Main content -->
+    <section class="content">
+    
+      
+      <!-- /.row (main row) -->
+<div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="filter-wrapper box-header headings with-border">
+              <h3 class="box-title report-title">Customers</h3>   
+              
+              <button  class="btn btn-primary export-wrapper pull-right">Excel &nbsp;  <i class="fa fa-file-excel-o" style="font-size:18px"></i></button>           
+            </div>
+   
+           <div class="filter-wrapper box-footer">
+           
+           <div id="select-header"> </div>
+           
+           
+               <div class="project-list_wrapper">
+    <div class="individual-search col-md-1" > </div>
+    <div class="individual-search col-md-1"> </div>
+    <div class="individual-search col-md-1"> </div>
+    
+    <div class="col-md-2">
+    
+               <div class="pull-left input-group date datetimepicker margin-r-15 ">
+              
+               
+               <span class="form-group input-group-addon">   <span class="glyphicon glyphicon-calendar"></span> </span> 
+                    <input type='text' class="form-control" placeholder="From" required="" name="plannedstartdate"  />
+                    
+                    </div>
+                
+                    <div class="pull-left input-group date datetimepicker margin-r-15">
+               <span class="form-group input-group-addon"> <span class="glyphicon glyphicon-calendar"></span> </span> 
+                    <input type='text' class="form-control"  placeholder="To" data-format="yyyy-MM-dd" required="" name="plannedstartdate"  />
+                    
+                    </div>
+                    <div class="pull-left">
+               
+               <button class="applyBtn btn btn-primary" type="submit" data-toggle="modal" data-target="#myModal">Apply</button>
+            
+             </div>
+            
+               
+               
+             
+               
+       
+               
+              </div>
+            </div>
+
+    </div>
+    
+    
+    
+    
+            
+              <table id="project-list" class="table table-striped table-bordered" cellspacing="0">
+       
+          <thead>
+          <tr>
+         
+                  </tr>
+            <tr>
+                <th width="11%"> ID</th>
+              
+                <th width="18%">Active</th>
+                <th width="16%">First Name</th>
+                <th width="19%">Last Name</th>
+                <th width="18%">Contact Number</th>
+                <th width="20%">Device ID</th>
+            </tr>
+                <!-- <tr>
+                <th width="11%"> ID</th>
+              
+                <th width="18%">Active</th>
+                <th width="16%">First Name</th>
+                <th width="19%">Last Name</th>
+                <th width="18%">Contact Number</th>
+                <th width="20%">Device ID</th>
+            </tr>
+            -->
+         
+        </thead>
+        
+
+          
+        <tbody>
+        
+        
+            <tr>
+          
+          
+           <td  >1001</td>
+                     
+                    <td>Yes</td>
+                    <td>Krishna  </td>
+                    <td> Kumar  </td>
+                    <td>9988750216</td>  
+                    <td> 334340280EA00B10</td> 
+          
+            </tr>
+            <tr>
+                         <td  >1002</td>
+                         
+                    <td>No</td>
+                    <td>Jim</td>
+                    <td> Robert  </td>
+                  <td>9998750216</td>  
+                              <td> 334340280EA00B11</td> 
+            </tr>
+            <tr>
+                    <td >1003                    </td>
+                    <td>Yes</td>
+                    <td>Karthick </td>
+                    <td>Raja</td>
+                    <td>9198800516</td>  
+                           <td> 334340280EA00B12</td>  
+            </tr>
+            <tr>
+                <td><span >1004</span></td>
+              
+                <td>Yes</td>
+                <td>Arun </td>
+                <td>Kumar</td>
+               <td>7725500516</td>  
+      <td> 334340280EA00B13</td> 
+            </tr>
+            <tr>
+                <td><span >1005</span></td>
+            
+                <td>Yes</td>
+                <td>Suresh </td>
+                <td>Kumar</td>
+                 <td>9828800416</td>  
+        <td> 334340280EA00B14</td> 
+            </tr>
+            <tr>
+                <td><span >1006</span></td>
+              
+                <td>No</td>
+                <td>Mahesh</td>
+                <td>Raja</td>
+                <td>9828800516</td> 
+                 <td> 334340280EA00B15</td>  
+            </tr>
+            <tr>
+                <td><span >1007</span></td>
+              
+                <td>No</td>
+                <td>Selva </td>
+                <td>Prabhu</td>
+              <td>7588800516</td> 
+                <td> 334340280EA00B16</td> 
+            </tr>
+            <tr>
+                <td><span >1008</span></td>
+              
+                <td>No</td>
+                <td>Selva</td>
+                <td>Kumar</td>
+                <td>8858005167</td>
+               <td> 334340280EA00B17</td> 
+            </tr>
+            <tr>
+                <td><span >1009</span></td>
+           
+                <td>No</td>
+                <td>Vijay</td>
+                <td>Guru</td>
+                <td>9858005169</td>
+             <td> 334340280EA00B18</td> 
+            </tr>
+            <tr>
+                <td><span >1010</span></td>
+             
+                <td>Yes</td>
+                <td>Senthil</td>
+                <td>Kumaran</td>
+               <td>9858004228</td>
+                  <td> 334340280EA00B19</td> 
+            </tr>
+            <tr>
+                <td>1011</td>
+             
+                <td>Yes</td>
+                 <td>Pradeep</td>
+                <td>Kumar</td>
+             <td>8880042210</td>
+              <td> 334340280EA00B20</td> 
+            </tr>
+            <tr>
+                <td>1012</td>
+          
+                <td>Yes</td>
+                     <td>Krishna  </td>
+                    <td> Kumar  </td>
+               <td>8880042214</td>
+               <td> 334340280EA00B21</td> 
+            </tr>
+            <tr>
+                <td>1013</td>
+                
+                <td>No</td>
+                    <td>Babu  </td>
+                    <td> Kumar  </td>
+              <td>9880042212</td>
+             <td> 334340280EA00B22</td> 
+            </tr>
+            <tr>
+                <td>1014</td>
+        
+                <td>No</td>
+                 <td>Selva</td>
+                <td>Kumar</td>   
+                 <td>7580042215</td>
+                 <td> 334340280EA00B23</td>  
+            </tr>
+            <tr>
+                <td>1015</td>
+         
+                <td>No</td>
+               <td>Selva</td>
+                <td>Kumar</td>  
+               <td>9580042215</td>
+              <td> 334340280EA00B24</td> 
+            </tr>
+            <tr>
+                <td>1016</td>
+      
+                <td>Yes</td>
+                <td>Selva</td>
+                <td>Kumar</td>  
+                 <td>7580042218</td>
+              <td> 334340280EA00B25</td> 
+            </tr>
+            <tr>
+                <td>1017</td>
+           
+                <td>Yes</td>
+                 <td>Pradeep</td>
+                <td>kumaran</td>
+                <td>9580042217</td>
+             <td> 334340280EA00B26</td> 
+            </tr>
+            <tr>
+                <td>1018</td>
+       
+                <td>Yes</td>
+                <td>Jim</td>
+                <td>Rober</td>
+                 <td>7580042215</td>
+            <td> 334340280EA00B27</td> 
+            </tr>
+            <tr>
+                <td>1019</td>
+     
+                <td>Yes</td>
+               <td>Mahesh</td>
+                <td>Babu</td>  
+              <td>9580042214</td>
+                  <td> 334340280EA00B28</td> 
+            </tr>
+            <tr>
+                <td>1020</td>
+
+                <td>No</td>
+                <td>Ramesh</td>
+                <td>Babu</td>  
+                 <td>8580042213</td>
+               <td> 334340280EA00B29</td> 
+            </tr>
+         
+         
+      
+        </tbody>
+    </table>
+                
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+           </section>
+        </div>
+        <!-- /.col -->
+
+   
+    <!-- /.content -->
+
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+  
+ 
+    Copyright &copy; 2016 <a href="http://in.grundfos.com/" target="_blank">Grundfos</a> All rights
+    reserved.
+  </footer>
+
+ 
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/lumino.glyphs.js"></script>
+
+
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/app.min.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/rating.js"></script>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script> 
+
+
+
+
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/dataTables.bootstrap.js"></script>
+
+
+<script>
+
+
+    var table = $('#project-list').DataTable({
+	      //"dom": '<"top"i>rt<"bottom"flp><"clear">',
+"dom": '<f<t>lp>',
+//sDom: "<'top'ilf>rt<'bottom'p><'clear'>",
+		 responsive: true,
+"ordering": true,
+        "info":     true,
+		 "searching": true,
+		
+		
+  
+
+});
+         
+	
+
+	$(".individual-search").each( function ( i ) {
+		var select = $('<select class="filters"><option value="">Select</option></select>')
+		.prependTo( $(this).empty() )
+		.on( 'change', function () {
+			var val = $(this).val();
+
+			table.column( i )
+			.search( val ? '^'+$(this).val()+'$' : val, true, false )
+			.draw();
+		} );
+
+		table.column( i ).data().unique().sort().each( function ( d, j ) {
+			select.append( '<option value="'+d+'">'+d+'</option>' )
+		} );
+	} );
+
+
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script> 
+<script>
+ $(function() {
+$('.datetimepicker').datetimepicker({	
+format: 'dd/mm/yyyy',
+
+
+ minView : 2,
+      autoclose: true
+});
+});
+</script>
+</body>
+</html>

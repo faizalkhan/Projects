@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grundfos | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="css/layout.css">
+  <!-- Font Awesome -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/datepicker3.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img src="images/mob-logo.png"  alt=""/></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="images/logo.png"  alt=""/></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+        
+       
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#">
+              <img src="images/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">GIN Service Head</span>
+            </a>
+            
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+        
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+ <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+       
+        <li class="treeview">
+          <a href="index.html">
+         <div class="menu-img"> <img src="images/home@24.png" width="24" height="24" alt=""/></div>
+            <span> Home </span>
+          <span class="pull-right-container">
+             
+          </span>
+          </a>
+          
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <div class="menu-img"><img src="images/complaints@24.png" width="24" height="24" alt=""/> </div>
+            <span>Complaints</span>
+            <span class="pull-right-container">
+             
+          </span>
+          </a>
+          
+        </li>
+        <li class="treeview">
+          <a href="#">
+          <div class="menu-img"><img src="images/escalation@24.png" width="24" height="24" alt=""/> </div>
+          <span>Escalations</span>
+            <span class="pull-right-container">
+              
+          </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+ 
+            <div class="menu-img"><img src="images/distributor@24.png" width="24" height="24" alt=""/></div> 
+            <span>Distributors</span>
+            
+          </a>
+          
+        </li>
+        <li class="active treeview">
+          <a href="#">
+            <div class="menu-img" > <img src="images/customer@24.png" width="24" height="24" alt=""/></div> 
+            <span>Customers</span>
+          
+          </a>
+          
+        </li>
+        <li class="treeview">
+          <a href="#">
+           <div class="menu-img"> <img src="images/rating@24.png" width="24" height="24" alt=""/></div>
+          <span>Rating</span>
+          </a>
+        </li>
+       
+    
+       
+  
+    
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      
+      <div class="complaint-board row">
+			<div class="col-xs-12 col-md-6 col-lg-3">
+				<div class="panel panel-lightred panel-widget ">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-4 widget-left">
+				<img src="images/ticket.svg" alt="" class="svg-icon">
+                        
+                        
+                        
+                        
+                         </div>
+						<div class="col-sm-9 col-lg-8 widget-right">
+                        <div class="text-muted light-red">Open Tickets</div>
+							<div class="large">203</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-3">
+				<div class="panel panel-lightblue panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-4 widget-left">
+                        	<!--<img src="images/call-center.svg" alt="" class="svg-icon">-->
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+
+							
+						</div>
+						<div class="col-sm-9 col-lg-8 widget-right">
+                        <div class="text-muted text-blue">Escalated  Tickets</div>
+							<div class="large">403</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-3">
+				<div class="panel panel-violet panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-4 widget-left">
+						<img src="images/user.svg" alt="" class="svg-icon">
+						</div>
+						<div class="col-sm-9 col-lg-8 widget-right">
+                        <div class="text-muted text-violet">Total Customers</div>
+							<div class="large">23,414</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-3">
+				<div class="panel panel-green panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-4 widget-left">
+							<img src="images/distributors.svg" alt="" class="svg-icon">
+						</div>
+						<div class="col-sm-9 col-lg-8 widget-right">
+                        <div class="text-muted text-green">Total Distributors</div>
+							<div class="large">1908</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+				<div class="panel panel-blue panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-4 widget-left">
+										<img src="images/like.svg" alt="" class="svg-icon">
+						</div>
+						<div class="col-sm-9 col-lg-8 widget-right no-lineheight no-pad-top">
+                        <div class="text-mute">October</div>
+							<div class="large">
+                            
+                            <div id="stars" class="starrr" data-rating='4'></div>
+    
+                            
+                            </div>
+							 <div class="text-mute">November</div>
+							<div class="large">
+                            <div id="stars" class="starrr" data-rating='2'></div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+      
+      <!-- /.row -->
+      <!-- Main row -->
+      
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Consolidated</h3>
+
+              <div class="box-tools pull-right">
+          
+               <div class="pull-left input-group date datetimepicker margin-r-15">
+               <span class="form-group input-group-addon"> <span class="glyphicon glyphicon-calendar"></span> </span> 
+                    <input type='text' class="form-control" required="" name="plannedstartdate"  />
+                    
+                    </div>
+                    <div class="pull-left input-group date datetimepicker margin-r-15">
+               <span class="form-group input-group-addon"> <span class="glyphicon glyphicon-calendar"></span> </span> 
+                    <input type='text' class="form-control"  data-format="yyyy-MM-dd" required="" name="plannedstartdate"  />
+                    
+                    </div>
+                    <div class="pull-left range_inputs">
+               
+               <button class="applyBtn btn btn-primary" type="submit" data-toggle="modal" data-target="#myModal">Apply</button>
+            
+             </div>
+            
+               
+               
+             
+               
+       
+               
+              </div>
+            </div>
+            <!-- /.box-header -->
+            
+            <!-- ./box-body -->
+            <div class="box-footer">
+              <div class="row">
+                <div class="col-md-4">
+                <h3 class="chart-title">Complaints</h3>
+                <div class="row border-right">
+                <div class="col-md-8">
+                  <div class="chart-responsive ">
+                    <canvas id="columnchart_values" height="368"></canvas>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                  <ul class="chart-legend clearfix">
+                    <li><a href="listing.html"><i class="fa fa-circle-o text-green"></i> Accepted</a></li>
+                    <li><a href="listing.html"><i class="fa fa-circle-o text-blue"></i> In Progress </a></li>
+                    <li><a href="listing.html"><i class="fa fa-circle-o text-red"></i> Closed</a></li>
+                  </ul>
+                </div>
+                  
+                  
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4">
+                   <h3 class="chart-title">Day Based</h3>
+                <div class="row border-right">
+                   <div class="box-body chart-responsive">
+              <div class="chart line-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+                </div>
+                  
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+              <div class="col-md-4">
+              
+              
+          
+              
+                  
+                   <h3 class="chart-title">Product Wise</h3>
+                  <div class="chart-responsive ">
+                  
+                    
+                     <div class="piechart_3d" style=" height: 368px;"></div>
+                  </div>
+              
+               
+
+              
+                  
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      
+      
+      <!-- /.row (main row) -->
+<div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">South</h3>
+
+              <div class="box-tools pull-right">
+          
+               <div class="pull-left input-group date datetimepicker margin-r-15">
+               <span class="form-group input-group-addon"> <span class="glyphicon glyphicon-calendar"></span> </span> 
+                    <input type='text' class="form-control" required="" name="plannedstartdate"  />
+                    
+                    </div>
+                    <div class="pull-left input-group date datetimepicker margin-r-15">
+               <span class="form-group input-group-addon"> <span class="glyphicon glyphicon-calendar"></span> </span> 
+                    <input type='text' class="form-control" required="" name="plannedstartdate"  />
+                    
+                    </div>
+                    <div class="pull-left range_inputs">
+               
+               <button class="applyBtn btn btn-primary" type="submit" data-toggle="modal" data-target="#myModal">Apply</button>
+            
+             </div>
+            
+               
+               
+             
+               
+       
+               
+              </div>
+            </div>
+            <!-- /.box-header -->
+            
+            <!-- ./box-body -->
+            <div class="box-footer">
+              <div class="row">
+                <div class="col-md-4">
+                <h3 class="chart-title">Complaints</h3>
+                <div class="row border-right">
+                <div class="col-md-8">
+                  <div class="chart-responsive ">
+                    <canvas id="pieChart-2" height="368"></canvas>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                  <ul class="chart-legend clearfix">
+                       <li><a href="listing.html"><i class="fa fa-circle-o text-green"></i> Accepted</a></li>
+                    <li><a href="listing.html"><i class="fa fa-circle-o text-blue"></i> In Progress </a></li>
+                    <li><a href="listing.html"><i class="fa fa-circle-o text-red"></i> Closed</a></li>
+                  </ul>
+                </div>
+                  
+                  
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4">
+                   <h3 class="chart-title">Day Based</h3>
+                <div class="row border-right">
+                   <div class="box-body chart-responsive">
+              <div class="chart line-charts" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+                </div>
+                  
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+              <div class="col-md-4">
+              
+              
+          
+              
+                  
+                   <h3 class="chart-title">Product Wise</h3>
+                  <div class="chart-responsive ">
+                  
+                    
+                     <div class="piechart_3d" style=" height: 368px;"></div>
+                  </div>
+              
+               
+
+              
+                  
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+  
+ 
+    Copyright &copy; 2016 <a href="http://in.grundfos.com/" target="_blank">Grundfos</a> All rights
+    reserved.
+  </footer>
+
+ 
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/lumino.glyphs.js"></script>
+
+
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/app.min.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/rating.js"></script>
+<script src="js/Chart.js"></script> 
+<script src="js/pie-chart.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="js/morris.js"></script>
+
+<script>
+  $(function () {
+    "use strict";
+   var line = new Morris.Line({
+       element: 'line-chart',	
+      resize: true,
+      data: [
+        {y: '2011 Q1', item1: 2666},
+        {y: '2011 Q2', item1: 2778},
+        {y: '2011 Q3', item1: 4912},
+        {y: '2011 Q4', item1: 3767},
+        {y: '2012 Q1', item1: 6810},
+        {y: '2012 Q2', item1: 5670},
+        {y: '2012 Q3', item1: 4820},
+        {y: '2012 Q4', item1: 15073},
+        {y: '2013 Q1', item1: 10687},
+        {y: '2013 Q2', item1: 8432}
+      ],
+      xkey: 'y',
+      ykeys: ['item1'],
+      labels: ['Item 1'],
+      lineColors: ['#3c8dbc'],
+      hideHover: 'auto'
+});
+    // LINE CHART
+
+
+   
+    var lines = new Morris.Line({
+      element: 'line-charts',
+	
+      resize: true,
+       data: [
+        {y: '2011 Q1', item1: 2666},
+        {y: '2011 Q2', item1: 2778},
+        {y: '2011 Q3', item1: 4912},
+        {y: '2011 Q4', item1: 3767},
+        {y: '2012 Q1', item1: 6810},
+        {y: '2012 Q2', item1: 5670},
+        {y: '2012 Q3', item1: 4820},
+        {y: '2012 Q4', item1: 15073},
+        {y: '2013 Q1', item1: 10687},
+        {y: '2013 Q2', item1: 8432}
+      ],
+      xkey: 'y',
+      ykeys: ['item1'],
+      labels: ['Item 1'],
+      lineColors: ['#3c8dbc'],
+      hideHover: 'auto'
+    });
+   
+  });
+</script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Canned Rotor',     11],
+          ['Encapsulated',      2],
+          ['Booster Set',  2],
+          ['Immersible', 2],
+		   ['Dosing pumps', 2],		  
+          ['Others',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+
+		  chartArea:{left:20,top:10,width:'100%',height:'75%'},
+		  
+		 legend: {position: 'right',  alignment:'center', textStyle: {color: '#444444', fontName:"Source Sans Pro", fontSize: 14}},
+		 
+          is3D: true,
+        };
+        
+        var chart = new google.visualization.PieChart(document.getElementsByClassName('piechart_3d')[0]);
+		var charts = new google.visualization.PieChart(document.getElementsByClassName('piechart_3d')[1]);
+        chart.draw(data, options);
+		charts.draw(data, options);
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script> 
+<script>
+ $(function() {
+$('.datetimepicker').datetimepicker({	
+format: 'dd/mm/yyyy',
+
+
+ minView : 2,
+      autoclose: true
+});
+});
+</script>
+<script>
+
+$(window).resize(function()
+ {
+	drawChart().reload();
+	
+	
+});
+</script>
+</body>
+</html>
