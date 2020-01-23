@@ -1,0 +1,538 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="css/layout.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+<link href="css/icon.css" rel="stylesheet" media="screen">
+<link href="css/form.css" rel="stylesheet" media="screen">
+<title>The GlENELG :: About School</title>
+
+<script type="text/javascript">
+        $(".date-picker").datepicker();
+
+$(".date-picker").on("change", function () {
+    var id = $(this).attr("id");
+    var val = $("label[for='" + id + "']").text();
+    $("#msg").text(val + " changed");
+});
+        </script>
+</head>
+<body >
+<header>
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"> <a href="index.html"><img src="images/theglenelg-logo.jpg" alt="" class="img-responsive"/> </a> </div>
+        <div class="col-sm-8">
+          <div class="andoc-wrapper"> <img src="images/partner-logo.jpg" width="76" height="85" alt=""/></div>
+          <div class="social-wrapper">
+            <div class="social">
+              <ul class="social-share">
+                <li class="language icon-socialnetwork currency"><a href="#"><img src="images/arabic-language.jpg" class="img-responsive" alt=""/></a></li>
+                <li><a href="#"><i class="icon-socialnetwork linked"></i></a></li>
+                <li><a href="#"><i class="icon-socialnetwork twitter"></i></a></li>
+                <li><a href="#"><i class="icon-socialnetwork home"></i></a></li>
+                <li> <span class="border-line">|</span><a href="#">Login</a> </li>
+              </ul>
+            </div>
+            <div class="search"><!--search_bar div starts here-->
+              
+              <input type="text" value="Search" onclick="if(this.value=='Search'){this.value=''}" onblur="if(this.value==''){this.value='Search'}" />
+              <div class="search-icon">
+                <input name="" type="image" src="images/search-icon.jpg" />
+              </div>
+            </div>
+            <!--search_bar div ends here--> 
+            
+          </div>
+        </div>
+      </div>
+      <!--/.container--> 
+    </div>
+    <!--/.top-bar-->
+    
+    <div class="menu-wrapper">
+      <div class="container">
+        <div class="navbar-default"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+              <li> <a href="index.html">Home</a> </li>
+              <li class="dropdown active"> <a href="about-school.html" class="dropdown-toggle" data-toggle="dropdown"> About School</a>
+                <ul class="dropdown-menu">
+                  <li> <a href="/">Mission</a> </li>
+                  <li> <a href="#">Handbooks</a> </li>
+                  <li> <a href="#">School Calendar</a> </li>
+                  <li> <a href="#">HeadMaster Welcome Message</a> </li>
+                </ul>
+              </li>
+              <li> <a href="#"> Campus</a> </li>
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Admissions </b></a>
+                <ul class="dropdown-menu">
+                  <li> <a href="/">1 Column Portfolio</a> </li>
+                  <li> <a href="#">2 Column Portfolio</a> </li>
+                  <li> <a href="#">3 Column Portfolio</a> </li>
+                  <li> <a href="#">4 Column Portfolio</a> </li>
+                  <li> <a href="portfolio-item.html">Single Portfolio Item</a> </li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Faculty</a>
+                <ul class="dropdown-menu">
+                  <li> <a href="#">Blog Home 1</a> </li>
+                  <li> <a href="#">Blog Home 2</a> </li>
+                  <li> <a href="blog-post.html">Blog Post</a> </li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media Center</a>
+                <ul class="dropdown-menu">
+                  <li> <a href="#">Full Width Page</a> </li>
+                  <li> <a href="#">Sidebar Page</a> </li>
+                  <li> <a href="#">FAQ</a> </li>
+                  <li> <a href="#">404</a> </li>
+                  <li> <a href="#">Pricing Table</a> </li>
+                </ul>
+              </li>
+              <li> <a href="/">Curriculum</a> </li>
+              <li> <a href="/">E-Services</a> </li>
+              <li> <a href="/"> Careers </a> </li>
+              <li> <a href="/"> Contact Us </a> </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse --> 
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--/header-->
+
+<section id="banner-slider">
+  <div class="containers">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+      
+      <!-- Wrapper for slides -->
+      <div class="carousel-inners" role="listbox">
+        <div class="items active"> <img src="images/about-banner.jpg" alt=""/>
+          <div class="carousel-caption inner-caption">
+            <div class="heading">
+              <h2>About GSAD</h2>
+            </div>
+            <div class="caption-text">
+              <p> The Glenelg School of Abu Dhabi was founded in 2008 by the Abu Dhabi National Oil Company (ADNOC)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="content-wrapper">
+  <div class="container">
+    <div class="row breadcrumb-wrapper">
+      <div class="col-sm-5">
+        <div class="panel-title">
+          <h1> Handbooks </h1>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <div class="breadcrumb">
+          <ul>
+            <li> <a href="#">Home  > </a></li>
+            <li> <a href="#">About School  > </a> </li>
+            <li> <a href="#" class="active">Handbooks </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="left-navigation"> <!-- left navigation Div starts here -->
+          <ul>
+            <li> <a href="#"> Mission » </a> </li>
+            <li> <a href="#"> Handbooks » </a> </li>
+            <li> <a href="#"> School Calendar » </a> </li>
+            <li> <a href="#"> Headmasters Welcome Message » </a> </li>
+          </ul>
+        </div>
+        <!-- left navigation Div ends here -->
+        
+        <div class="student-activities"> <img src="images/student-activities.jpg" alt="" class="img-responsive" /> </div>
+        <div class="about-latest-news"> <!-- latest-news div starts here -->
+          <div class="heading">
+            <div class="text-indent">
+              <h1>Latest News </h1>
+            </div>
+          </div>
+          <div class="row"> <!-- row div starts here-->
+            <h2>Omar Nour (professional triathlete)
+              visits Abu Dhabi Elementary School </h2>
+            <p> Exercises to promote healthy living for grades 1 and 2 students <a href="#"> [View+] </a> </p>
+          </div>
+          <!-- row div ends here-->
+          
+          <div class="row"> <!-- row div starts here-->
+            <h2>Omar Nour (professional triathlete)
+              visits Abu Dhabi Elementary School </h2>
+            <p> Exercises to promote healthy living for grades 1 and 2 students <a href="#"> [View+] </a> </p>
+          </div>
+          <!-- row div ends here-->
+          
+          <div class="row"> <!-- row div starts here-->
+            <h2>Omar Nour (professional triathlete)
+              visits Abu Dhabi Elementary School </h2>
+            <p> Exercises to promote healthy living for grades 1 and 2 students <a href="#"> [View+] </a> </p>
+          </div>
+          <!-- row div ends here--> 
+          
+        </div>
+        <!-- latest-news ends starts here -->
+        
+        <div class="goingon-wrapper"> <!-- left navigation Div starts here -->
+          <h2> What's going on: </h2>
+          <ul>
+            <li> <a href="#"> News </a> </li>
+            <li> <a href="#"> Events Calendar </a> </li>
+            <li> <a href="#"> Photo Gallery </a> </li>
+          </ul>
+        </div>
+        <!-- left navigation Div ends here --> 
+        
+      </div>
+      <div class="col-sm-9">
+        <div class="right-wrapper">
+          <h2>Online Application Form</h2>
+          <div class="applicationform-wrapper">
+            <div class="headings">
+              <div class="text-center"> <img src="images/theglenelg-applicationlogo.jpg" width="74" height="74" alt=""/>
+                <h3 > ADnoc Schools Admission Appllocation Form </h3>
+              </div>
+              <p> <span class="note">Please Note: </span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+          <div class="attachments-wrapper" >
+            <div class="row">
+              <div class="headings">
+                <h3> Part-1</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th colspan="5" > <h2> General Information </h2>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="12%"> Branch <span class="alert"> * </span></td>
+                      <td width="6%">(DDM) (SN,RW,GH,MZ)</td>
+                      <td width="10%">Academic year <span class="alert"> * </span></td>
+                      <td width="11%">DDM 2016-2017 </td>
+                    </tr>
+                    <tr>
+                      <td width="12%"> Siblings Attending ADNOC <span class="alert"> * </span></td>
+                      <td width="6%"><label class="checkbox-inline">
+                          <input type="checkbox" value="">
+                          How many (DDM)</label></td>
+                      <td width="10%">Attending Sibling ID NO <span class="alert"> * </span></td>
+                      <td width="11%">Insert one OD only </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="headings">
+                <h3> Part-2</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th colspan="5" > <h2> Student Information </h2>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="35%"> Student Full name <span class="alert"> * </span></td>
+                      <td width="65%">(DDM) (SN,RW,GH,MZ)</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Date of birth <span class="alert"> * </span></td>
+                      <td width="65%"><div class="form-group date-birth">
+                          <select class="col-md-3" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                          <select class="col-md-3" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                          <select class="col-md-3" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Gender<span class="alert"> * </span></td>
+                      <td width="65%"><div class="form-group">
+                          <select class="form-control" id="sel1">
+                            <option>Select</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Nationality <span class="alert"> * </span></td>
+                      <td width="65%"><div class="form-group">
+                          <select class="form-control" id="sel1">
+                            <option>Select</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Nationality <span class="alert"> * </span></td>
+                      <td width="65%"><div class="form-group">
+                          <select class="form-control" id="sel1">
+                            <option>Select</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Current School <span class="alert"> * </span></td>
+                      <td width="65%"><p> Applicant for Grade KG2 -12 must enter  their current school information </p></td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Grade Applying <span class="alert"> * </span></td>
+                      <td width="65%"><p> (DDM)KG1-12 only list of openings will appear </p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="headings">
+                <h3> Part-3</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th colspan="5" > <h2> Student Information </h2>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="35%"> Father Name <span class="alert"> * </span></td>
+                      <td width="65%"></td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Nationality <span class="alert"> * </span></td>
+                      <td width="65%"><div class="form-group">
+                          <select class="form-control" id="sel1">
+                            <option>Select</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Employer Name<span class="alert"> * </span></td>
+                      <td width="65%"> Applicant for Grade KG2 -12 must enter their current school information </td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Mother Name<span class="alert"> * </span></td>
+                      <td width="65%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Nationality <span class="alert"> * </span></td>
+                      <td width="65%"><div class="form-group">
+                          <select class="form-control" id="sel1">
+                            <option>Select</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Employer Name<span class="alert"> * </span></td>
+                      <td width="65%"> (DDM) ADNOC Group Company or others
+                        Group Company (list all 17) </td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Parent/Guardian Contact<span class="alert"> * </span></td>
+                      <td width="65%"><p>&nbsp;</p></td>
+                    </tr>
+                    <tr>
+                      <td width="35%"> Corresponding Email<span class="alert"> * </span></td>
+                      <td width="65%"><p>&nbsp;</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="headings">
+                <h3> Part-4</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th colspan="5" > <h2> Attachment </h2>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="35%">Student Passport Copy <span class="alert"> * </span></td>
+                      <td width="65%"><span class="btn btn-default btn-file"> Upload
+                        <input type="file">
+                        </span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"> </div>
+              <div class="col-md-8">
+                <input type="submit" value="Submit" class="reset">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"> <span class="thank-you">Thank you for selecting ADNOC Schools as the environment for your child to learn & grow </span> </div>
+            </div>
+            
+            
+            
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse"  data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        
+        
+        
+      <i  class="glyphicon glyphicon-large glyphicon-chevron-up"></i> Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <ul>
+          <li><a href="#"> Home </a> </li>
+          |
+          <li> <a href="#"> About School </a> </li>
+          |
+          <li> <a href="#">Campus </a> </li>
+          |
+          <li> <a href="#">Admissions </a> </li>
+          |
+          <li> <a href="#">Faculity </a> </li>
+          |
+          <li> <a href="#"> Media Center </a> </li>
+          |
+          <li> <a href="#"> Curriculum </a> </li>
+          |
+          <li> <a href="#"> E-Services </a> </li>
+          |
+          <li> <a href="#"> Careers </a> </li>
+          |
+          <li> <a href="#"> Contact Us </a> </li>
+          |
+          <li> <a href="#"> Sitemap </a> </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <div class="copyright"> © 2014 Glenelg School of Abu Dhabi | All Rights Reserved <span class="pull-right">Designed and Developed by <a href="#">FOHMICS </a> </span> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+	
+	
+       $(".glyphicon").addClass("glyphicon-chevron-up");
+
+	
+    $('#collapseOne').on('shown.bs.collapse', function () {
+       $(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+    });
+
+    $('#collapseOne').on('hidden.bs.collapse', function () {
+
+       $(".glyphicon").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+});
+</script>
+</body>
+</html>

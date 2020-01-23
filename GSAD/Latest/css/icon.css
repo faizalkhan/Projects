@@ -1,0 +1,63 @@
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.icon-small {
+	width: 16px;
+	height: 20px;
+}
+.icon-large {
+	width: 30px;
+	height: 30px;
+}
+.icon-small.ratings {
+	background-image: url("../images/ratings.png");
+	
+}
+.icon-large.print {
+	background-image: url("../images/print.jpg");
+	background-position: 0px 5px;
+}
+.icon-large.message {
+	background-image: url("../images/message.jpg");
+	background-position: 0px 5px;
+}
+.icon-socialnetwork {
+	width: 32px;
+	height: 26px;
+}
+.icon-small.addattachment {
+	background-image: url("../images/attachment-add.png");
+}
+.icon-small.attach {
+	background-image: url("../images/attachments-icon.png");
+}
+.icon-small.question {
+	background-image: url("../images/question.jpg");
+}
+.icon-socialnetwork.linked {
+	background-image: url("../images/linked.jpg");
+}
+.icon-socialnetwork.twitter {
+	background-image: url("../images/twitter.jpg");
+}
+.icon-socialnetwork.currency {
+	background-image: url("../images/currency.jpg");
+	background-position: 0px 10px;
+}
+.icon-socialnetwork.home {
+	background-image: url("../images/home.jpg");
+}
+.icon-small.blogprev {
+	background-image: url("../images/previous-blogarrow.png");
+	background-position: 0px 3px;
+}
+.icon-small.calendar {
+	background-image: url("../images/calendar.jpg");
+	background-position: 0px 2px;
+}
+.icon-small.map {
+	background-image: url("../images/map-icon.jpg");
+	background-position: 0px 2px;
+}

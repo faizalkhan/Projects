@@ -1,0 +1,133 @@
+/********************** form defaults ************************/
+input[type="text"] {
+	color: #a3a3a3;
+	outline: none;
+	padding: 6px 30px 6px 10px;
+	border: solid 1px #c6c6c6;
+	font-size: 12px;
+	width: 300px;
+}
+input[type="month"] {
+	color: #999999;
+	outline: none;
+	padding: 3px 30px 3px 10px;
+	line-height: 20px;
+	border: solid 1px #c6c6c6;
+	font-size: 14px;
+	margin-right: 13px;
+	width: 147px;
+}
+input[type="grade"] {
+	color: #999999;
+	outline: none;
+	padding: 3px 30px 3px 10px;
+	line-height: 20px;
+	border: solid 1px #c6c6c6;
+	font-size: 14px;
+	margin-right: 13px;
+	width: 147px;
+}
+input[type="school"] {
+	border: 1px solid #c6c6c6;
+	color: #999999;
+	font-size: 14px;
+	line-height: 20px;
+	margin-right: 13px;
+	outline: medium none;
+	padding: 3px 30px 3px 10px;
+	width: 120px;
+}
+input[type="checkbox"] {
+	line-height: normal;
+	margin: 4px 0 0;
+	border: solid 1px #c6c6c6;
+}
+select {
+	color: #a3a3a3;
+	outline: none;
+	padding: 5px 10px 5px 10px;
+	font-size: 12px;
+	width: 300px;
+}
+textarea {
+	width: 95%;
+	margin-top: 10px;
+	height: 100px;
+}
+/********************** Search Form ************************/
+.search {
+	margin-top: 15px;
+	font-size: 12px;
+}
+/********************** Login Form ************************/
+input[type="email"], input[type="password"] {
+	color: #a3a3a3;
+	outline: none;
+	padding: 8px 30px 8px 10px;
+	border: solid 1px #c6c6c6;
+	font-size: 12px;
+	width: 300px;
+}
+input[type="submit"] {
+	color: #006db9;
+	outline: none;
+	margin-right: 20px;
+	padding: 5px 10px 5px 10px;
+	border: solid 1px #2688c5;
+	background-color: #fff;
+	font-size: 14px;
+	width: 73px;
+}
+/********************** Attachment ************************/
+input[type="attachments"] {
+	color: #006db9;
+	outline: none;
+	padding: 6px 10px 6px 10px;
+	border: solid 1px #c6c6c6;
+	background-color: #fff;
+	margin-left: 10px;
+	font-size: 14px;
+	width: 202px;
+}
+/********************** Addmore ************************/
+.add-more input[type="submit"] {
+	width: 93px;
+}
+/********************** Aplication Settings ************************/
+.aplicationsettings-wrapper input[type="text"] {
+	width: 259px;
+}
+.aplicationsettings-wrapper select {
+	width: 259px;
+}
+.aplicationsettings-wrapper input[type="date"] {
+	width: 223px;
+}
+.aplicationsettings-wrapper input[type="image"] {
+	color: #a3a3a3;
+	outline: none;
+	padding: 6px 30px 6px 10px;
+	display: block;
+}
+/********************** Search ************************/
+input[type="searchdate"] {
+    margin-left: -15px;
+    width: 73px !important;
+}
+.search-wrapper input[type="text"], .search-wrapper select {
+    width: 231px;
+}
+/********************** Search ************************/
+.masters-wrapper input[type="submit"] {
+    width: 106px;
+}
+/********************** Search container ************************/
+.search-container input[type="text"]
+{
+	width:100%;
+	
+}
+.search-container input[type="radio"]
+{
+margin: 8px 10px 0px 10px;
+}
