@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sharjah Ladies Club - Ladies Club in Sharjah, UAESharjah Ladies Club</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <!-- Font Awesome -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link rel="stylesheet" href="css/theme.css">
+ 
+ 
+<!--[if gt IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie8-and-up.css" />
+<![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini preload">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img src="images/mob-logo.png"  alt=""/></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="images/logo.png"  alt=""/></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+        
+        <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="images/userpic.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">Suman.s</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="images/userpic.png" class="img-circle" alt="User Image">
+
+                <p>
+                  Suman.s - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+             
+              <li class="user-footer">
+              
+                <div class="pull-right">
+                  <a href="login.html" class="btn btn-default btn-flat">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <!-- Control Sidebar Toggle Button -->
+         <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+ <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+      
+      <ul class="sidebar-menu tree" data-widget="tree">
+  
+      
+      
+       <li><a href="dashboard.html"  ><i class="fa icon-dashboard-1" aria-hidden="true"></i><span>Dashboard</span></a></li>
+          
+       
+       <li><a href="#"><i class="fa icon-Items" aria-hidden="true"></i> <span>Items</span></a></li> 
+    
+      <li><a href="addevent.html"><i class="fa icon-event-2" aria-hidden="true"></i> <span>Events</span></a></li>
+    
+          <li><a href="#"><i class="fa icon-Notifications" aria-hidden="true"></i> <span>Notification</span></a></li>
+    
+      <li><a href="#"><i class="fa icon-Survey" aria-hidden="true"></i> <span>Feedback Survey</span></a></li>
+    
+ 
+  
+      </ul>
+      
+      
+      
+      
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+
+    <!-- Main content -->
+    <section class="content add_new_page">
+        
+      <!-- /.row (main row) -->
+<div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="filter-wrapper box-header headings">
+              <h3 class="box-title report-title">Add Event</h3>   
+            </div>
+   
+            <div class="row">
+            
+              <div class="col-md-12">
+                  <div class="content-area">
+                       
+                    <form  method="post" action="#" class="add_new">
+                      <div class="row form_container">
+                                 <div class="col-sm-12 col-md-6 col-lg-6 left_column">
+                                    <div class="l-column">
+                                      <div class="form-group">
+                                          <label for="name">Name</label>
+                                          <input type="name" class="form-control" id="name" placeholder="" name="name" />
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="overview">Overview</label>
+                                          <textarea class="form-control" rows="5" id="overview" name="overview"></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="date">Activation Start</label>
+                                                    <div class="input-group date" id="datetimepicker1">
+                                                        <input  type="text" class="form-control" name="date"  id="date" value="" required /> 
+                                                        <span class="input-group-addon add-on"><i class="glyphicon glyphicon-calendar" ></i></span>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="date">Activation end</label>
+                                                    <div class="input-group date" id="datetimepicker1">
+                                                        <input  type="text" class="form-control" name="date"  id="date" value="" required /> 
+                                                        <span class="input-group-addon add-on"><i class="glyphicon glyphicon-calendar" ></i></span>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sel1">Number of seats</label>
+                                            <select class="form-control" id="sel1">
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                            </select>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="sel1">Facility</label>
+                                            <select class="form-control" id="sel1">
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                            </select>
+                                          </div>
+                                          <div>
+                                            <label for="usr">Photos</label>
+                                            <input type="file" class="form-control" id="usr">
+                                          </div>
+                                      </div>                                                                        
+                                 </div>
+                                 <div class="col-sm-12 col-md-6 col-lg-6 right_column">
+                                    <div class="r-column">                 
+                                    <div class="form-group arabic">
+                                      <label for="name" class="float-right">اسم</label>
+                                      <input type="name" class="form-control" id="name" placeholder="" name="name" />
+                                    </div>
+                                    <div class="form-group arabic">
+                                      <label for="overview" class="float-right">نظرة عامة</label>
+                                      <textarea class="form-control" rows="5" id="overview" name="overview"></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="date">Event Start</label>
+                                                <div class="input-group date" id="datetimepicker1">
+                                                     <input  type="text" class="form-control" name="date"  id="date" value="" required /> 
+                                                     <span class="input-group-addon add-on"><i class="glyphicon glyphicon-calendar" ></i></span>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="date">Event end</label>
+                                                <div class="input-group date" id="datetimepicker1">
+                                                     <input  type="text" class="form-control" name="date"  id="date" value="" required /> 
+                                                     <span class="input-group-addon add-on"><i class="glyphicon glyphicon-calendar" ></i></span>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-6">
+                                            <div class="form-group radio_paid">
+                                                <label class="control-label" for="extensibility">Extensibility</label>
+                                                <div class="input-group">
+                                                    <label class="radio-inline"><input type="radio" name="optradio" checked>Paid</label>
+                                                    <label class="radio-inline"><input type="radio" name="optradio">Free</label>                                                      
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label for="name">Per person</label>
+                                                <input type="name" class="form-control" id="name" placeholder="" name="name" />
+                                              </div>
+                                        </div>
+                                    </div> 
+                                    <div class="form-group">
+                                        <label for="sel1">Facility</label>
+                                        <select class="form-control" id="sel1">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                        </select>
+                                      </div> 
+                                    <div>
+                                        <label for="usr">Videos</label>
+                                        <input type="file" class="form-control" id="usr">
+                                      </div> 
+                                    </div>                         
+                                </div>
+                         </div>
+                          <div class="row submit_row">
+                              <button type="reset" value="Reset"  class="btn">Cancel</button>
+                              <button type="submit" class="btn btn-default submit">Save</button>
+                          </div>
+                             
+                         </form>
+                        
+                  
+                  
+                  </div>
+        
+			  </div>
+			  </div>
+          
+    
+            
+              
+                
+              </div>
+              
+
+              <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+          
+          
+          
+          
+           </section>
+        </div>
+        <!-- /.col -->
+
+   
+    <!-- /.content -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+	  <div class="settings-wrapper"> Lorem Ipsum </div>
+    <!-- Tab panes -->
+    
+  </aside>
+  <!-- /.control-sidebar -->
+
+ 
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <script>
+        $(window).on("load", function()
+        {
+            SLC.menuNavigation();
+		      
+        })
+    $(document).ready(function() {
+  $("body").removeClass("preload");
+});
+   
+    </script>
+    
+    
+</body>
+</html>
