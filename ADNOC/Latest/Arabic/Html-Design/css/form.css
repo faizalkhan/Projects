@@ -1,0 +1,104 @@
+/********************** form defaults ************************/
+input[type="text"] {
+	color: #a3a3a3;
+	outline: none;
+	margin: 0px 0px 15px 20px;
+	height: 30px;
+	padding: 0px 5px 0px 6px;
+	border: solid 1px #fff;
+	font-size: 12px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 0px #ccc;
+	width: 43%;
+}
+input[type="search"] {
+	color: #a3a3a3;
+	outline: none;
+	margin: 3px 0px 5px 20px;
+	height: 30px;
+	padding: 0px 5px 0px 6px;
+	border: solid 1px #fff;
+	font-size: 12px;
+	border-radius: 5px;
+	width: 26%;
+}
+textarea {
+	color: #a3a3a3;
+	outline: none;
+	margin: 0px 20px 10px 23px;
+	padding: 10px 30px 13px 10px;
+	border: solid 1px #fff;
+	font-size: 12px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 0px #ccc;
+	height: 75px;
+}
+input[type="submit"] {
+	color: #e53e52;
+	background-color: #fff;
+	outline: none;
+	margin: 0px 0px 5px 20px;
+	padding: 10px 38px;
+	border: solid 1px #e53e52;
+	font-size: 18px;
+	border-radius: 5px;
+	height: 82px;
+}
+input[type="submit"]:hover {
+	background-color: #e53e52;
+	color: #fff;
+}
+.form-inline {
+	margin-bottom: 10px;
+}
+textarea.form-control {
+	height: 82px;
+}
+.forms-wrapper .form-control {
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px 0 #ccc;
+	color: #555;
+	display: block;
+	font-size: 12px;
+	line-height: 2.42857;
+	padding: 6px 12px;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	width: 100%;
+}
+.input-append .form-control {
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px 0 #ccc;
+	color: #555;
+	display: block;
+	font-size: 12px;
+	line-height: 2.42857;
+	padding: 6px 12px;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	width: 76%;
+	margin-right: 8px;
+	float: left;
+}
+.forms-wrapper textarea {
+	margin: 0px;
+	border: 1px solid #cccccc;
+}
+.forms-wrapper input[type="text"] {
+	border: 1px solid #cccccc;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px 0 #ccc;
+	color: #333333;
+	font-size: 13px;
+	margin: 0 0 15px 0px;
+	outline: medium none;
+	padding: 0 5px 0 6px;
+}
+.required {
+	color: #ff0000;
+	font-size: 14px;
+}

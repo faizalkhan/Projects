@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="css/layout.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+<link href="css/icon.css" rel="stylesheet" media="screen">
+<link href="css/form.css" rel="stylesheet" media="screen">
+<title>MSD ::Manage - Appointment</title>
+</head>
+<body>
+<header>
+  <div class="top-wrapper">
+    <div class="container">
+      <div class="col-md-2"> <a href="#"><img src="images/arabic-lang.png" width="47" height="11" alt=""/></a></div>
+      <div class="col-md-10">
+        <div class="information-wrapper pull-right">
+          <div class="pull-left "><i class="icon-small patient"> </i> <a href="#"> Patient And Visitors Guide </a></div>
+          <div class="pull-left "><i class="icon-small doctors"> </i> <a href="doctors.html"> Doctors </a> </div>
+          <div class="pull-left"><i class="icon-small e-services"> </i> <a href="create-appointment.html"> E- Services </a> </div>
+          <div class="pull-left"><i class="icon-small registration"> </i> <a href="#"> Registration </a> </div>
+          <div class="pull-left"><i class="icon-small login"> </i> <a href="login.html"> Login </a></div>
+          <div class="pull-left"><i class="icon-small faq"> </i> <a href="#"> FAQ </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"> <a href="#"><img src="images/msd-logo.jpg"  class="img-responsive" alt=""/> </a> </div>
+        <div class="col-sm-8">
+          <div class="andoc-wrapper"> <img src="images/partner-logo.jpg" width="76" height="85" alt=""/></div>
+        </div>
+      </div>
+      <!--/.container--> 
+    </div>
+    <!--/.top-bar-->
+    
+    <div class="menu-wrapper">
+      <div class="container">
+        <div class="navbar-default"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+              <li> <a href="index.html">Home</a> </li>
+              <li> <a href="corporate-profile.html"> Corporate Profile </a> </li>
+              <li> <a href="#"> Our Services </a> </li>
+              <li> <a href="our-campuses.html"> Our Campuses </a> </li>
+              <li> <a href="csr.html" > CSR </a> </li>
+              <li> <a href="events.html" >Events Diary</a> </li> <li> <a href="publications.html">Publications</a> </li>
+              <li> <a href="/">Media Gallery</a> </li>
+              <li> <a href="/"> About Abu Dhabi </a> </li>
+            </ul>
+            <div class="search-icon pull-right" data-toggle="collapse"   data-target="#demo">
+              <input name="" type="image" src="images/search-icon.png" />
+            </div>
+            <div class="search collapse" id="demo" ><!--search_bar div starts here-->
+              
+              <input type="search" value="Search" onclick="if(this.value=='Search'){this.value=''}" onblur="if(this.value==''){this.value='Search'}" />
+            </div>
+          </div>
+          <!-- /.navbar-collapse --> 
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--/header-->
+
+<section id="banner-slider">
+  <div class="containers">
+    <div class="items">
+      <div class="container">
+        <h2> E- Services </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content-wrapper inner-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="breadcrumb">
+          <ul>
+            <li> <a href="#">Home  > </a></li>
+            <li> <a href="#"> E-Services  ></a> </li>
+            <li> <a href="#" class="active">Manage Appointment</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="left-navigation"> <!-- left navigation Div starts here -->
+          <ul>
+            <li> <a href="create-appointment.html" > Create Appointment</a> </li>
+            <li> <a href="doctors.html" >Doctor Schedule </a> </li>
+            <li  class="active"> <a href="manage-appointment.html">Manage Appointment</a> </li>
+            <li> <a href="complaint-feedback.html">Complaint / Feedback Form</a> </li>
+          </ul>
+        </div>
+        <!-- left navigation Div ends here --> 
+        
+      </div>
+      <div class="col-sm-9">
+        <div class="right-wrapper">
+          <h2>Manage Appointment</h2>
+          <div class="forms-wrapper"><!--forms div starts here -->
+              <div class="row"><!--row div starts here -->
+              <div class="col-md-2">
+                <div class="form-group">
+                  <select class="form-control" id="sel1">
+                    <option>Select</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <select class="form-control" id="sel1">
+                    <option>Select</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group input-append date" id="from" data-date="" data-date-format="dd-mm-yyyy">
+                  <input type="text" class="form-control" placeholder="From" >
+                  <span class="add-on"><i class="icon-small icon-calendar"></i></span> </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group input-append date" id="to" data-date="" data-date-format="dd-mm-yyyy">
+                  <input type="text" class="form-control" placeholder="To" >
+                  <span class="add-on"><i class="icon-small icon-calendar"></i></span> </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+            </div>
+            <!--row div ends here --> 
+            
+          </div>
+          <!--forms div ends here -->
+          <div class="management-wrapper">
+          
+          <div class="table-responsive">
+            <table width="102%"  class="table table-bordered">
+              <thead>
+                <tr>
+                  <th width="13%" valign="top">Patient ID</th>
+                  <th width="14%">Patient Name</th>
+                  <th width="11%">Department</th>
+                  <th width="11%" >Clinic</th>
+                  <th width="13%">Appointment Date</th>
+                  <th width="12%">Time</th>
+                  <th width="13%">Appointment Type</th>
+                  <th width="13%">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ADNOC 001</td>
+                  <td>Patient 1</td>
+                  <td>Cardiology</td>
+                  <td>SKEC</td>
+                  <td>02/03/2015</td>
+                  <td>9.00 AM</td>
+                  <td>New</td>
+                  <td><a href="#"> <i class="icon-large edit"> </i> </a> <a href="#"> <i class="icon-large cancel"> </i> </a></td>
+                </tr>
+                <tr>
+                  <td>ADNOC 002</td>
+                  <td>Patient 2</td>
+                  <td>Cardiology</td>
+                  <td>SKEC</td>
+                  <td>02/03/2015</td>
+                  <td>9.00 AM</td>
+                  <td>Follow Up </td>
+                  <td><a href="#"> <i class="icon-large edit"> </i> </a> <a href="#"> <i class="icon-large cancel"> </i> </a></td>
+                </tr>
+                <tr>
+                  <td>ADNOC 003</td>
+                  <td>Patient 3</td>
+                  <td>Cardiology</td>
+                  <td>SKEC</td>
+                  <td>02/03/2015</td>
+                  <td>9.00 AM</td>
+                  <td>New</td>
+                  <td><a href="#"> <i class="icon-large edit"> </i> </a> <a href="#"> <i class="icon-large cancel"> </i> </a></td>
+                </tr>
+                 <tr>
+                  <td>ADNOC 003</td>
+                  <td>Patient 3</td>
+                  <td>Cardiology</td>
+                  <td>SKEC</td>
+                  <td>02/03/2015</td>
+                  <td>9.00 AM</td>
+                  <td>New</td>
+                  <td><a href="#"> <i class="icon-large edit"> </i> </a> <a href="#"> <i class="icon-large cancel"> </i> </a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          </div>
+          
+          <nav class="pull-right">
+  <ul class="pagination">
+    <li><a href="#"><span  class="pages" aria-hidden="true"> First</span><span class="sr-only pages"> <b> Previous </b></span></a></li>
+      <li><a href="#"><span class="pages" aria-hidden="true"> Previous </span><span class="sr-only"><b>Previous </b></span></a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span aria-hidden="true">Next </span><span class="sr-only">Next</span></a></li>
+    <li><a href="#"><span aria-hidden="true">Last </span><span class="sr-only">Next</span></a></li>
+  </ul>
+</nav>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <h2>Quick Links</h2>
+          <div class="quick-links">
+            <ul>
+              <li> <a href="#"> Overview</a> </li>
+              <li> <a href="#"> Awards And Achievements </a> </li>
+              <li> <a href="#"> Awareness Programs</a> </li>
+              <li> <a href="#"> Doctors List</a> </li>
+            </ul>
+            <ul>
+              <li> <a href="#"> Guidance For Inpatient </a> </li>
+              <li> <a href="#"> Social Responsibilities </a> </li>
+              <li> <a href="#"> Faq </a> </li>
+              <li> <a href="#"> Sitemap</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-md-3 col-sm-6">
+          <div class="latest-tweets">
+            <h2>Get in touch </h2>
+            <h3> ADNOC - <br>
+              Medical Services Division </h3>
+            <p> P.O. Box : 898. Abu Dhabi, UAE </p>
+            <p> Tel : +971-2-6020000 </p>
+            <p> <a href="#"> Get directions on the map <a href="#" class="direction"> → </a></p>
+          </div>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-md-3 col-sm-6">
+          <div class="social-media">
+            <h2>Follow us </h2>
+            <ul>
+              <li> <a href="our-campuses.html"><i class="twitter"> </i></a> </li>
+              <li> <a href="our-campuses.html"> <i class="facebook"></i> </a> </li>
+              <li> <a href="our-campuses.html"><i class="linked"></i> </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"> © 2014 ADNOC-MSD. All Rights Reserved. Designed and Developed by <a href="#"> FOHMICS </a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/datepicker.js"></script> 
+<script>
+
+    $(function () {
+     $('#from').datepicker();
+	      $('#to').datepicker();
+      var startDate = new Date(2012, 1, 20);
+      var endDate = new Date(2012, 1, 25);
+    });
+	</script>
+</body>
+</html>

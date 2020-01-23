@@ -1,0 +1,55 @@
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.icon-small {
+	width: 15px;
+	height: 15px;
+}
+.icon-large {
+	width: 25px;
+	height: 25px;
+}
+.icon-small.doctors {
+	background-image: url(../images/doctors-icon.png);
+	background-position: 0px 0px;
+}
+.icon-small.e-services {
+	background-image: url(../images/eservice-icon.png);
+	background-position: 0px 0px;
+}
+.icon-small.contactus {
+	background-image: url(../images/registration-icon.png);
+	background-position: 0px 0px;
+}
+.icon-small.login {
+	background-image: url(../images/login-icon.png);
+	background-position: 0px 0px;
+}
+.icon-small.faq {
+	background-image: url(../images/faq-icon.png);
+	background-position: 0px 0px;
+}
+.icon-small.patient {
+	background-image: url("../images/patient-icon.png");
+	background-position: 0px 0px;
+}
+.icon-small.nextarrow {
+	background-image: url("../images/next-arrow.png");
+	background-position: 4px 7px;
+}
+.icon-small.prevarrow {
+	background-image: url("../images/prev-arrow.png");
+	background-position: 4px 7px;
+}
+.icon-small.icon-calendar {
+	background-image: url("../images/date.png");
+	background-position: 0px 0px;
+}
+.icon-large.edit {
+	background-image: url("../images/edit-item.png");
+}
+.icon-large.cancel {
+	background-image: url("../images/cancel-icon.png");
+}

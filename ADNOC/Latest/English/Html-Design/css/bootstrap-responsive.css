@@ -1,0 +1,284 @@
+@media (max-width:320px) {
+.forms-wrapper {
+	padding: 10px 11px 26px 6px;
+}
+.input-append .form-control {
+	width: 100% !important;
+}
+.suggestions-wrapper .text-indent {
+	width: 60%;
+}
+.patient-description .image-indent {
+	width: 27%;
+}
+.patient-description .text-indent {
+	width: 72%;
+}
+.suggestions-wrapper .image-indent {
+	right: 54px !important;
+}
+.suggestions-wrapper p {
+	margin: 0 0 0 34px;
+}
+.suggestions-wrapper small {
+	font-size: 15px;
+}
+.suggestions-wrapper span {
+	font-size: 16px;
+}
+.suggestions-wrapper big {
+	margin-left: -66px;
+}
+.item img {
+	height: 501px !important;
+}
+.text-area {
+	width: 84% !important;
+}
+.ourpatient-wrapper h2 {
+	font-size: 19px;
+}
+.carousel-inner > .active {
+	left: 5%;
+}
+}
+
+@media (min-width:321px) and (max-width:480px) {
+.contact-address {
+	height: 326px;
+}
+.input-append .form-control {
+	width: 50% !important;
+}
+.carousel-inner > .active {
+	left: 5%;
+}
+.text-area {
+	width: 86% !important;
+}
+.item img {
+	height: 501px !important;
+}
+.carousel-caption {
+	width: 53%;
+}
+.suggestions-wrapper .text-indent {
+	width: 44% !important;
+}
+.suggestions-wrapper .image-indent {
+	width: 32.2%;
+}
+}
+
+@media (max-width:767px) {
+/* ----------------------------------- Login Wrapper ----------------------------------- */
+.login-wrapper .input-group {
+	margin-top: 10px;
+}
+/* ----------------------------------- Manage Appointment ----------------------------------- */
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	padding: 8px 6px 8px 6px;
+}
+/* ----------------------------------- Contact Wrapper ----------------------------------- */
+.contact-wrapper .row {
+	margin: 15px 0px 10px 0px;
+}
+/* ----------------------------------- News Wrapper ----------------------------------- */
+.news-wrapper h3 {
+	margin: 20px 0px 5px 0px;
+}
+/* ----------------------------------- Our Services ----------------------------------- */
+.forms-wrapper {
+	padding: 10px 11px 26px 6px;
+}
+.forms-wrapper .form-group {
+	margin: 10px 0px 0px 0px !important;
+}
+/* ----------------------------------- About- us ----------------------------------- */ 
+.right-wrapper {
+	border-left: solid 0px #cccccc;
+}
+.right-wrapper h2 {
+	font-size: 18px;
+}
+.left-navigation {
+	margin: 0px;
+}
+/* ------------------ breadcrumb --------------- */
+.breadcrumb {
+	padding: 10px 0px 10px 17px;
+	overflow: hidden;
+	border-bottom: solid 1px #ccc;
+}
+/* ----------------------------------- Home ----------------------------------- */ 
+.carousel-inner > .active {
+	left: 5%;
+}
+.quick-links ul {
+	float: none;
+}
+.latest-tweets {
+	margin: 20px 0px 0px 0px;
+}
+.appointment-wrapper .heading {
+	float: none;
+}
+.appointment-wrapper .form-control {
+	width: 90%;
+}
+.text-boxes {
+	float: none;
+}
+.text-area {
+	float: none;
+	width: 88%;
+}
+input[type="submit"] {
+	margin: 0px 0px 5px 0px !important;
+}
+.search {
+	background-color: #e53e52;
+}
+input[type="search"] {
+	width: 76% !important;
+}
+.navbar-nav {
+	margin: 0px;
+}
+.menu-wrapper {
+	height: auto;
+}
+.appointment-wrapper .heading {
+	width: auto;
+	margin: 0px 0px 20px 0px;
+}
+.services-wrapper .row .image-indent {
+	width: 22%;
+}
+.services-wrapper .text-indent {
+	width: 75%;
+	margin-left: 0px;
+}
+.suggestions-wrapper {
+	margin: 20px 0px 10px 0px;
+}
+.announcements {
+	border-right: 0px solid #cccccc;
+}
+.items h2 {
+	padding: 20px 0 0 30px;
+}
+.item img {
+	height: auto;
+}
+.carousel-caption {
+	width: 62%;
+	left: 33%;
+}
+.carousel-caption h2 {
+	font-size: 25px;
+}
+.services-wrapper {
+	border-right: 0px solid #0085c6;
+}
+.around-campus .row .image-indent {
+	margin-right: 20px;
+}
+.around-campus .row .image-indent, .around-campus .row .text-indent {
+	width: auto;
+}
+.around-campus .row .text-indent {
+	margin-top: 20px;
+	float: none;
+}
+.copyright {
+	font-size: 10px;
+	margin-top: 20px;
+}
+.social-media {
+	margin: 20px 0px 0px 0px;
+}
+}
+
+@media (max-width:768px) {
+.menu-wrapper {
+	background: none;
+}
+.nav > li > a {
+	color: #fff;
+	display: block;
+	position: relative;
+	font-size: 13px;
+}
+#content-wrapper h1 {
+	font-size: 15px;
+}
+.upcoming-events .row .text-indent {
+	float: left;
+	width: auto;
+}
+.items img {
+	background-position: 50% center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 0;
+	width: 100%;
+}
+}
+
+@media (min-width:992px) {
+.around-campus .row .text-indent {
+	padding: 15px 0px 0px 0px;
+	float: left;
+	width: 48%;
+}
+.navbar-nav > li > a {
+	padding-left: 10.6px;
+	padding-right: 10.7px;
+}
+.quick-links ul {
+	margin: 0 177px 0 0;
+}
+.patient-description .image-indent {
+	width: 27%;
+}
+.patient-description .text-indent {
+	width: 73%;
+}
+.form-group {
+	margin: 0 0 5px 10px !important;
+}
+.ourpatient-wrapper h2 {
+	font-size: 21px;
+}
+.suggestions-wrapper .text-indent {
+	width: 67%;
+}
+.inner-caption {
+	width: 26.2% !important;
+}
+}
+
+@media (min-width:1200px) {
+.around-campus .row .text-indent {
+	padding: 15px 0px 0px 0px;
+	float: left;
+	width: 48%;
+}
+.navbar-nav > li > a {
+	font-family: 'SegoeUISemibold';
+	padding-bottom: 8px;
+	padding-left: 20.1px !important;
+	padding-right: 23px;
+	padding-top: 8px;
+}
+.item img {
+	height: auto !important;
+}
+}
+
+@media (min-width: 1367px) {
+.inner-caption {
+	width: 14% !important;
+}
+}
