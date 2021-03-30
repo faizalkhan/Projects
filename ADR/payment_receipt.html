@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- CSS -->
+<link rel="stylesheet" href="css/simplebar.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/wizard.css">
+<title>ADR</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="stage-bg">
+<div class="topbar">
+  <div class="container">
+    <div class="d-flex justify-content-center"> <img width="100px" src="images/logo.png" alt=""> </div>
+  </div>
+</div>
+<section>
+  <div class="container back-white minH  my-3 pt-3">
+    <div class="row ">
+      <div class="col-12">
+        <h2 class="font20"> Payment Receipt </h2>
+        <span class="fontdarkblue-color fontW700 font14"> 23 Nov, 2020 </span>
+        <p class="font16 mt-4 pb-4 pt-2 pl-2 pr-2 pb-2 color-darkgrey  border-dashed"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id congue enim. Donec et dui tincidunt arcu condimentum rutrum. Donec at eleifend ipsum.
+          Aliquam faucibus ante eget quam eleifend, et aliquet ipsum dignissim. Aliquam dapibus sed est aliquet varius. Proin laoreet, ex quis iaculis tempor, <
+          nunc nulla efficitur augue, quis efficitur odio elit ac dolor.</p>
+      </div>
+    </div>
+    <div class="row addClaimantSection">
+      <form action="/" class="col-12">
+        <div class="row formGroupList m-0">
+          <div class="col-12 p-0">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <div class="form-group mt-3">
+                  <label for="Claimant Name" class="fontdarkblue-color fontW700  font14 mb-1">Receipt No </label>
+                  <b class="d-block"> 97127392 </b> </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group mt-3">
+                  <label for="Claimant Name"
+                        class="fontdarkblue-color fontW700  font14 mb-1">Name</label>
+                  <b class="d-block"> Christopher </b> </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group mt-3">
+                  <label for="Claimant Name" class="fontdarkblue-color fontW700  font14 mb-1">Amount </label>
+                  <b class="d-block"> 50,000 </b> </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group mt-3">
+                  <label for="Claimant Name" class="fontdarkblue-color fontW700  font14 mb-1">Account
+                    No</label>
+                  <b class="d-block"> 5868458406</b> </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group mt-3">
+                  <label for="Claimant Name" class="fontdarkblue-color fontW700  font14 mb-1">Payment Date </label>
+                  <b class="d-block"> 20-Dec-2020 </b> </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group mt-3">
+                  <label for="Claimant Name" class="fontdarkblue-color fontW700  font14 mb-1">Transaction ID </label>
+                  <b class="d-block"> TS87897127392 </b> </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group mt-3">
+                  <label for="Claimant Name" class="fontdarkblue-color fontW700  font14 mb-1">Mode of
+                    Transaction</label>
+                  <b class="d-block"> Successful</b> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row addRepsentSection">
+      <div class="col-12"> <a href="javascript:void(0)"
+              onclick="backAction('addClaimantSection','addRepsentSection')" class="backLink"><i
+                class="fa fa-angle-left"></i> Add Representative for Claimant (01)</a> </div>
+      <div class="col-12 py-2 px-0 my-3 topStrip">
+        <p class="px-3 fontW700 m-0">Representative (01)</p>
+      </div>
+      <form action="/" class="col-12 claimantForm">
+        <div class="row formGroupList m-0">
+          <div class="col-12 p-0">
+            <div class="row formGroupFields">
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="Representative Name" class="mb-1">Representative Name <span>*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email"
+                        name="Representative Name">
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="Email ID" class="mb-1">Email ID (Optional)</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="Email ID">
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="Mobile Number" class="mb-1">Mobile Number (Optional)</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email"
+                        name="Mobile Number">
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="Telephone" class="mb-1">Telephone (Optional)</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="Telephone">
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="Relationship" class="mb-1">Relationship</label>
+                  <div class="form-group">
+                    <select class="form-control" id="sel1">
+                      <option>Counsel</option>
+                      <option>Counsel</option>
+                      <option>Counsel</option>
+                      <option>Counsel</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="Country" class="mb-1">Country <span>*</span></label>
+                  <div class="form-group">
+                    <select class="form-control" id="sel1">
+                      <option>USA</option>
+                      <option>INDIA</option>
+                      <option>CHINA</option>
+                      <option>PAKISTAN</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="Address Line 1" class="mb-1">Address Line 1 <span>*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email"
+                        name="Address Line 1">
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="Address Line 2" class="mb-1">Address Line 2 <span>*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email"
+                        name="Address Line 2">
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="City" class="mb-1">City <span>*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="City">
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="State" class="mb-1">State <span>*</span></label>
+                  <div class="form-group">
+                    <select class="form-control" id="sel1">
+                      <option>New York</option>
+                      <option>New York</option>
+                      <option>New York</option>
+                      <option>New York</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-group">
+                  <label for="Zip Code" class="mb-1">Zip Code <span>*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="Zip Code">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3"> <a href="javascript:void(0)" onclick="addMember(this)" class="iconText"><i
+                        class="fa fa-user-plus mr-2"></i> Add Member</a> </div>
+              <div class="d-none addMemberClone">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="form-group">
+                        <label for="Rep.Member 1 Name" class="mb-1">Rep.Member 1 Name <span>*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email"
+                              name="Rep.Member 1 Name">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="form-group">
+                        <label for="Designation" class="mb-1">Designation <span>*</span></label>
+                        <div class="form-group">
+                          <select class="form-control" id="sel1">
+                            <option>Counsel Member</option>
+                            <option>Counsel Member</option>
+                            <option>Counsel Member</option>
+                            <option>Counsel Member</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="form-group">
+                        <label for="Email" class="mb-1">Email <span>*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="Email">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <div class="form-group">
+                            <label for="Mobile Number" class="mb-1">Mobile Number <span>*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                  name="Mobile Number">
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="form-group font14 delete-T">
+                            <input type="checkbox" name="">
+                            Portal Access <img class="ml-2" src="images/bin.png" alt=""> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="col-12 my-5">
+        <div class="row">
+          <div class="col-12 mb-3"> <a href="javascript:void(0)" class="iconBgText text-center w-100 float-left"
+                  onclick="addRepClaim('addRepsentSection')"><i class="fa fa-plus mr-1"></i> Add Representative</a>
+            <p class="m-0 text-center float-left w-100 secGreyText">(Optional)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <footer>
+    <div class="text-center font14LH18"> ©2021 CII Center. All rights reserved. </div>
+  </footer>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
