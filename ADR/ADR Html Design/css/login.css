@@ -1,0 +1,421 @@
+/****************************** Login CSS Starts Here *****************************/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #333;
+  font-size: 13px;
+  margin: 0;
+  align-items: center;
+  margin: 0px;
+  background: url(../images/Login.png) 0% 0% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+}
+input, textarea, select, button {
+  color: #9C9C9C;
+  font-size: 13px;
+}
+input:disabled {
+  color: #000;
+  font-weight: bolder;
+}
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+:focus {
+  outline: none;
+}
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+}
+.login-wrapper .inner {
+  vertical-align: middle;
+  /*max-width: 850px;
+    max-width: 995px;*/
+  margin: auto;
+  display: flex;
+  border-radius: 15px;
+}
+.login-wrapper .inner .image-holder {
+  padding: 257px 130px 20px 120px;
+  width: 60%;
+  color: #fff;
+  /*background: #B88F41 0% 0% no-repeat padding-box;*/
+  box-shadow: 0px 1px 10px #1A1A1A1A;
+  border-radius: 14px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  opacity: 0.75;
+}
+.color-secondary {
+  color: #0098fb;
+}
+.image-holder p {
+  line-height: 24px;
+  color: #fff;
+  font-size: 14px;
+}
+.login-wrapper .image-holder h2 {
+  margin-bottom: 20px;
+  font-size: 42px;
+}
+.form-headings {
+  margin-bottom: 10px;
+}
+.login-wrapper .inner form {
+  width: 20%;
+  padding-top: 36px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: #fff;
+  border-radius: 10px;
+  border-bottom: solid 10px #0098FB;
+  /*min-height: 55vh;*/
+  margin-top: 120px;
+  margin-bottom: 180px;
+}
+.inner h3 {
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 0px;
+  font-size: 24px;
+  padding-bottom: 2px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.login-wrapper .form-wrapper {
+  position: relative;
+}
+.login-wrapper .form-wrapper i {
+  position: absolute;
+  bottom: 11px;
+  left: 9px;
+  font-size: 19px;
+  color: #000;
+}
+.login-wrapper .form-control {
+  border: 1px solid #e3e3e3;
+  padding: 0px 18px 0px 40px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.login-wrapper select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-left: 20px;
+}
+select option[value=""][disabled] {
+  display: none;
+}
+.login-wrapper button {
+  border-radius: 0px;
+  border: none;
+  width: 45%;
+  height: 40px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #053892;
+  font-size: 15px;
+  color: #fff;
+  vertical-align: middle;
+}
+.login-wrapper button i {
+  margin-left: 10px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+button:hover i, button:focus i, button:active i {
+  -webkit-animation-name: hvr-icon-wobble-horizontal;
+  animation-name: hvr-icon-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+@media (max-width: 1199px) {
+  .login-wrapper {
+    background-position: right center;
+  }
+}
+@media (max-width:767px) {
+  .login-wrapper .inner form {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .login-wrapper .inner form {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width:991px) and (max-width:1199px) {
+  .login-wrapper .inner form {
+    width: 33%;
+  }
+}
+@media only screen and (min-width:1200px) and (max-width:1366px) {
+  .login-wrapper .inner .image-holder {
+    width: 68%;
+  }
+  .login-wrapper .inner form {
+    width: 26%;
+  }
+}
+@media only screen and (min-width:1367px) {
+  .login-wrapper .inner .image-holder {
+    width: 68%;
+  }
+  .login-wrapper .inner form {
+    width: 26%;
+  }
+}
+@media (max-width: 990px) {
+  .login-wrapper .inner {
+    display: block;
+    margin: 30px;
+    margin-bottom: 39px;
+  }
+  .login-wrapper .modal-footer {
+    margin: 10px 15px;
+  }
+  .login-wrapper .copyright-wrapper {
+    margin-top: -26px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: bolder;
+    line-height: 12px;
+    font-size: 11px;
+  }
+  .login-wrapper .form-wrapper {
+    margin: 15px;
+  }
+  .login-wrapper .inner .image-holder {
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .login-wrapper .bottom-action {
+    margin: 0px 10px;
+  }
+  .login-wrapper button {
+    margin-top: 30px;
+  }
+  .login-wrapper .inner form {
+    width: 100%;
+    padding: 40px 0 10px;
+  }
+  .login-wrapper button {
+    margin-top: 30px;
+  }
+}
+.login-wrapper .form-check-label {
+  margin-bottom: 0;
+  color: #343434;
+  font-weight: 600;
+}
+.login-wrapper .signed-in {
+  left: 4px;
+  top: -2px;
+  position: relative;
+}
+.login-wrapper .forgot-link {
+  color: #343434;
+  text-decoration: none;
+  float: right;
+  font-weight: 600;
+}
+.login-wrapper .clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.login-wrapper label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+.login-wrapper .modal-footer {
+  color: #101010;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+.login-wrapper .logo-wrapper {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.login-wrapper .modal-footer a {
+  color: #0098fb;
+  text-decoration: none;
+}
+input.form-control.disabled::placeholder {
+  color: #464545;
+  font-weight: bolder;
+}
+.copyright-wrapper {
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+  font-weight: bolder;
+}
+.fa-email {
+  background: url(../images/mail.png) no-repeat 0px 1px;
+  width: 20px;
+  height: 17px;
+}
+.fa-mobiles {
+  background: url(../images/mobile.png) no-repeat 3px 0px;
+  width: 17px;
+  height: 19px;
+}
+.fa-caseno {
+  background: url(../images/caseno.png) no-repeat 0px 0px;
+  width: 20px;
+  height: 14px;
+}
+.fa-userno {
+  background: url(../images/user.png) no-repeat 2px 0px;
+  width: 18px;
+  height: 19px;
+}
+.otp-wrapper .form-wrapper {
+  clear: both;
+}
+.otp-wrapper .form-control {
+  float: left;
+  margin: 10px 40px 20px 0px;
+}
+.otp-wrapper .form-wrapper i {
+  position: absolute;
+  bottom: -72px;
+  left: auto;
+  right: auto;
+  font-size: 19px;
+  color: #000;
+}
+.otp-wrapper .form-control {
+  padding: 0px 8px 0px 7px;
+  text-align: center;
+  font-size: 28px !important;
+  color: #000;
+  line-height: 17px;
+  font-weight: 600 !important;
+}
+.otp-wrapper input.form-control.disabled::placeholder {
+  color: #000 !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+.otp-wrapper .col {
+  width: 18%;
+  float: left;
+  margin: 0px 12px 0px 0px;
+}
+.otp-wrapper .fa-emailedit {
+  background: url(../images/edit.png) no-repeat 0px 0px;
+  width: 12px;
+  height: 11px;
+  display: inline-block;
+}
+.otp-wrapper .fa-emailcheck {
+  background: url(../images/otp-check.png) no-repeat 0px 0px;
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+}
+.otp-wrapper input:disabled {
+  background-color: #fff;
+}
+.otp-wrapper button {
+  margin-bottom: 0px;
+}
+/****************************** Login CSS Ends Here *****************************/
+/*************************** Change password CSS starts Here ******************************/
+.changepassword-wrapper {
+  min-height: 0vh;
+  display: block;
+}
+.changepassword-wrapper .form-control::placeholder {
+  color: rgb(79, 77, 77);
+  opacity: 1;
+  font-size: 1rem !important;
+  line-height: 53px !important;
+  height: 53px !important;
+}
+.changepassword-wrapper .modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+.fa-newpassword {
+  background: url(../images/password.png) no-repeat 0px 1px;
+  width: 20px;
+  height: 25px;
+}
+.changepassword-wrapper .form-wrapper i {
+  position: absolute;
+  bottom: 17px;
+  left: 11px;
+  font-size: 19px;
+  color: #000;
+}
+.changepassword-wrapper .form-control {
+  border: 1px solid #e3e3e3;
+  padding: 0px 18px 0px 40px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 55px;
+  margin-bottom: 20px;
+  font-size: 1.2rem !important;
+  color: rgb(79, 77, 77);
+}
+.modal-content.changepassword-wrapper {
+  border-radius: 1em;
+  border-bottom: solid 10px #0098FB;
+}
+.modal-content.changepassword-wrapper .btn {
+  padding: 0.5rem 2.5rem;
+}
+/*************************** Change password CSS Ends Here ******************************/
