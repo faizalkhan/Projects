@@ -34,10 +34,79 @@ function downloadtooltip() {
 
   function menuNavigation()
     {
-     $(".sidebar .nav a").on("click", function(){
-     $(".sidebar .nav").find(".active").removeClass("active");
-     $(this).addClass("active");
-     })
+     $(".sidebar .nav a").on("click", function(e){
+         
+       $('.sidebar .nav [id="' + active + '"]').addClass('active').closest('.nav-treeview').find('i').addClass('fa-angle-left').hide();
+         
+         
+         $(".sidebar .nav a").removeClass("active");
+         
+         var setvalue = localStorage.setItem('active', e.currentTarget.id);   
+         
+         $(this).addClass('active');
+            
+     });
+        
+         var active = localStorage.getItem('active');
+         
+         console.log(active);       
+        
+        
+        
+        
+    	if(active)
+    {
+    
+        
+     
+        
+		$(".sidebar .nav").find(".active").removeClass("active");
+        
+     
+       $('.sidebar .nav [id="' + active + '"]').addClass('active').next().show().prev().find('i').addClass('fa-angle-down');
+        
+       $('.sidebar .nav [id="' + active + '"]').addClass('active').closest('.nav-treeview').show().prev().find('i').addClass('fa-angle-down');
+        
+       
+        
+    }
+         
+        
+        
+        
+        
+        /*if(active === 'reports1')
+            {
+         
+             $('.nav .nav-treeview').show();
+        
+            }*/
+     
+        
+        
+           // for treeview
+ 
+ 
+        
+        
+        
+    /*   $(".nav-treeview a").on("click", function(e){
+           
+           alert("hi");
+           
+           
+           $('.nav-treeview .nav [id="' + active + '"]').addClass('active').next().show();
+           
+              // $(this).addClass('active');
+           
+       });*/
+                               
+                               
+        
+        
+        
+ 
+        
     }
     
     
