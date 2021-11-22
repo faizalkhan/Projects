@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>ADR</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="css/all.min.css">
+<!-- overlayScrollbars --> 
+
+<!-- DataTables -->
+<link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+<link rel="stylesheet" href="css/admin.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/dashboard.styles.css">
+<link rel="stylesheet" href="css/sidebarmenu.css">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper"> 
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light"> 
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a> </li>
+    </ul>
+    
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      
+      <!-- Messages Dropdown Menu -->
+      
+      <li class="nav-item dropdown"> <a class="nav-link h-auto bg-transparent pt-1 pr-0" data-toggle="dropdown" href="#" aria-expanded="true"> <span class=" login-name rounded-circle"> J </span> </a>
+        <div class="dropdown-menu border-0 dropdown-menu-lg dropdown-menu-right"> <a href="#" class="dropdown-item pb-3"> 
+          <!-- Message Start -->
+          <div class="media"> <span class="login-smalltext rounded-circle mr-2"> J </span>
+            <div class="media-body">
+              <h3 class="dropdown-item-title text-wrap mt-2 mb-0"> <b class="ml-1 p-1 font16"> James Jones </b> </h3>
+              <span class="badge badge-secondary badge-scheduled profileDes-badge mt-2 ml-2 p-1 rounded">Profile Designation</span> </div>
+          </div>
+          <!-- Message End --> 
+          </a>
+          <div class="dropdown-divider"></div>
+          
+          <!-- Message Start -->
+          <div class="media">
+            <div class="media-body"> <a href="#" class="dropdown-item mt-2 dropdown-item-title text-wrap pb-0 mb-0">
+              <div class="d-block">
+                <p class="d-inline-block password-badge rounded mb-3"> <i class="fas fa-key"></i> </p>
+                <div class="d-inline-block changepassword ml-2 font-12"> Change Password </div>
+              </div>
+              </a> <a href="#" class="dropdown-item  dropdown-item-title text-wrap pt-0 mb-0">
+              <div class="d-block">
+                <p class="d-inline-block signout-badge rounded"> <i class="fa fa-sign-out"></i> </p>
+                <div class="d-inline-block sign-out ml-2 font-12"> Sign Out </div>
+              </div>
+              </a> </div>
+          </div>
+          <!-- Message End --> 
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar --> 
+  
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4"> 
+    <!-- Brand Logo --> 
+    <a href="/" class="brand-link brand-image" style="display: none;"> <span class=""> <img src="images/c2logo.png" alt="AdminLTE Logo"  style="margin-top: -3px;"> </span> </a> <a href="/" class="brand-link"> <span class="brand-text font-weight-light"> <img src="images/dashboard_logo.png" style="margin-top: -3px;"></span> </a> 
+    
+    <!-- Sidebar -->
+    <div class="sidebar"> 
+      <!-- Sidebar user panel (optional) --> 
+      
+      <!-- Sidebar Menu -->
+      <nav class="">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview menu-open"> <a href="#" class="nav-link active ">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" fill="currentColor" viewBox="0 0 18 18">
+              <defs>
+                <clipPath id="clip-path">
+                  <rect id="Rectangle_5987" data-name="Rectangle 5987" width="18" height="18" transform="translate(-0.426)" fill="none"/>
+                </clipPath>
+              </defs>
+              <g id="Dashboard" transform="translate(0.426)" clip-path="url(#clip-path)">
+                <g id="dashboard-2" data-name="dashboard">
+                  <g id="Group_7179" data-name="Group 7179">
+                    <g id="Group_7178" data-name="Group 7178">
+                      <rect id="Rectangle_5997" data-name="Rectangle 5997" width="10" height="6" transform="translate(11.574)" />
+                      <rect id="Rectangle_5998" data-name="Rectangle 5998" width="10" height="10" transform="translate(-0.426)" />
+                      <rect id="Rectangle_5999" data-name="Rectangle 5999" width="10" height="6" transform="translate(-0.426 12)" />
+                      <rect id="Rectangle_6000" data-name="Rectangle 6000" width="10" height="10" transform="translate(11.574 8)" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <p class="ml-2 pos-text"> Dashboard </p>
+            </a> </li>
+          <li class="nav-item"> <a href="#" class="nav-link ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 18 18" class="mt-n1">
+              <g id="Disputes" transform="translate(0.267 0.267)">
+                <rect id="Rectangle_8" data-name="Rectangle 8" width="18" height="18" transform="translate(-0.267 -0.267)" fill="none"/>
+                <g id="user" transform="translate(1.274 1.533)">
+                  <g id="Group_3123" data-name="Group 3123" transform="translate(0.259 0)">
+                    <g id="Group_3122" data-name="Group 3122" transform="translate(0 0)">
+                      <circle id="Ellipse_32" data-name="Ellipse 32" cx="2" cy="2" r="2" transform="translate(0.2 0.2)" />
+                    </g>
+                  </g>
+                  <g id="Group_3125" data-name="Group 3125" transform="translate(0 5.06)">
+                    <g id="Group_3124" data-name="Group 3124">
+                      <path id="Path_1731" data-name="Path 1731" d="M5.563,165.048l-.422-4.213A.923.923,0,0,0,4.219,160H3.712a.467.467,0,0,0-.328.135l-.6.6-.6-.6A.467.467,0,0,0,1.86,160H1.353a.923.923,0,0,0-.922.834L.01,165.048a.463.463,0,0,0,.46.509H.977l.38,3.8a.924.924,0,0,0,.922.834H3.294a.924.924,0,0,0,.922-.834l.38-3.8H5.1a.463.463,0,0,0,.461-.509Z" transform="translate(-0.008 -160)" />
+                    </g>
+                  </g>
+                  <g id="Group_3127" data-name="Group 3127" transform="translate(5.446 2.042)">
+                    <g id="Group_3126" data-name="Group 3126">
+                      <path id="Path_1732" data-name="Path 1732" d="M197.06,59.647h-1.166a4.13,4.13,0,0,0-.754-1.316l.581-1.01a.463.463,0,0,0-.17-.632l-1.612-.926a.463.463,0,0,0-.633.171l-.577,1a4.116,4.116,0,0,0-1.525,0l-.578-1.006a.464.464,0,0,0-.633-.17l-1.612.926a.462.462,0,0,0-.171.632l.58,1.01a4.422,4.422,0,0,0-.284.406,1.8,1.8,0,0,1,.252.727l.421,4.213a1.394,1.394,0,0,1-.35,1.068l0,0a1.385,1.385,0,0,1-.643.393.454.454,0,0,0,.2.242l1.612.926a.462.462,0,0,0,.231.061.449.449,0,0,0,.12-.017.46.46,0,0,0,.281-.216l.577-1a4.136,4.136,0,0,0,1.525,0l.577,1a.464.464,0,0,0,.633.17l1.612-.926a.465.465,0,0,0,.17-.633l-.581-1.01a4.042,4.042,0,0,0,.757-1.314h1.166a.463.463,0,0,0,.463-.463V60.11A.463.463,0,0,0,197.06,59.647Zm-5.094,3.242a1.852,1.852,0,1,1,1.852-1.852A1.854,1.854,0,0,1,191.966,62.889Z" transform="translate(-188.15 -55.702)" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <p class="ml-2"> Disputes</p>
+            </a> </li>
+          <li class="nav-item"> <a href="#" class="nav-link  ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 18 18" class="mt-n1">
+              <g id="Arbitrator" transform="translate(0.12 0.353)">
+                <rect id="Rectangle_8" data-name="Rectangle 8" width="18" height="18" transform="translate(-0.12 -0.353)" fill="none"/>
+                <g id="user_3_" data-name="user (3)" transform="translate(-34.004 1.647)">
+                  <g id="XMLID_544_" transform="translate(36.884)">
+                    <path id="XMLID_1550_" d="M49.345,243.319c-.379-2.561-1.293-5.095-3.3-6.319a4.737,4.737,0,0,1-5.843,0c-2.007,1.224-2.922,3.758-3.3,6.319a.912.912,0,0,0,.9,1.04H48.44A.912.912,0,0,0,49.345,243.319Z" transform="translate(-36.884 -229.579)"/>
+                    <g id="XMLID_1709_" transform="translate(2.54)">
+                      <path id="Path_17727" data-name="Path 17727" d="M121.7,0a3.7,3.7,0,1,0,3.7,3.7A3.7,3.7,0,0,0,121.7,0Zm0,2.489a1.2,1.2,0,0,0-1.2,1.2.551.551,0,0,1-1.1,0,2.307,2.307,0,0,1,2.3-2.3.551.551,0,0,1,0,1.1Z" transform="translate(-118)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <p class="ml-2 pos-text"> Arbitrators</p>
+            </a> </li>
+          <li class="nav-item has-treeview"> <a href="#" class="nav-link ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 18 18" class="mt-n1">
+              <g id="Reports" transform="translate(0.083 0.307)">
+                <rect id="Rectangle_8" data-name="Rectangle 8" width="18" height="18" transform="translate(-0.083 -0.307)" fill="none"/>
+                <g id="hierarchy" transform="translate(0.871 1.756)">
+                  <g id="Group_3128" data-name="Group 3128">
+                    <path id="Path_1733" data-name="Path 1733" d="M16.013,57.3H14.98V54.715a.517.517,0,0,0-.517-.517H8.781V52.132H9.815a.517.517,0,0,0,.517-.517v-3.1A.517.517,0,0,0,9.815,48h-3.1a.517.517,0,0,0-.517.517v3.1a.517.517,0,0,0,.517.517H7.748V54.2H2.066a.517.517,0,0,0-.517.517V57.3H.517A.517.517,0,0,0,0,57.815v3.1a.517.517,0,0,0,.517.517h3.1a.517.517,0,0,0,.517-.517v-3.1a.517.517,0,0,0-.517-.517H2.583V55.232H7.748V57.3H6.715a.517.517,0,0,0-.517.517v3.1a.517.517,0,0,0,.517.517h3.1a.517.517,0,0,0,.517-.517v-3.1a.517.517,0,0,0-.517-.517H8.781V55.232h5.166V57.3H12.914a.517.517,0,0,0-.517.517v3.1a.517.517,0,0,0,.517.517h3.1a.517.517,0,0,0,.517-.517v-3.1A.517.517,0,0,0,16.013,57.3Z" transform="translate(0 -48)" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <p class="ml-2"> Reports <i class="right fas fa-angle-left mt-1"></i></p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item"> <a href="#" class="nav-link pl-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="ml-n1 bi bi-dot" viewBox="0 0 16 16">
+                  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+                <p>Disputes</p>
+                </a> </li>
+              <li class="nav-item"> <a href="#" class="nav-link pl-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="ml-n1 bi bi-dot" viewBox="0 0 16 16">
+                  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+                <p>Arbitrators</p>
+                </a> </li>
+              <li class="nav-item"> <a href="#" class="nav-link pl-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="ml-n1 bi bi-dot" viewBox="0 0 16 16">
+                  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+                <p>Case Payments</p>
+                </a> </li>
+              <li class="nav-item"> <a href="#" class="nav-link pl-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="ml-n1 bi bi-dot" viewBox="0 0 16 16">
+                  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+                <p>Arbitrator Payments</p>
+                </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu --> 
+    </div>
+    <!-- /.sidebar --> 
+  </aside>
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper"> 
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-12">
+            <div class="header-section">
+              <h1 class="m-0 text-dark">Pretrial Payment</h1>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active">#76854479</li>
+              </ol>
+            </div>
+          </div>
+          <!-- /.col --> 
+          
+        </div>
+        
+        <!-- /.row --> 
+      </div>
+      <!-- /.container-fluid --> 
+    </div>
+    <!-- /.content-header --> 
+    
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid"> 
+        <!-- Main row -->
+        <div class="row"> 
+          <!-- Left col -->
+          <div class="col-md-12"> 
+            <!-- MAP & BOX PANE -->
+            <div class="card mh-74"> 
+              
+              <!-- /.card-header -->
+              <div class="card-body pr-4 pl-4">
+                <h4 class="mb-0"> Pretrial Payment </h4>
+                <span class="font14 fontdarkblue-color">10 Dec, 2020 </span>
+                <p class="f-greycolor"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p>
+                <form action="/" class="col-12 claimantForm">
+                  <div class="row formGroupList m-0">
+                    <div class="col-12 col-md-12  p-0">
+                      <div class="row pb-2">
+                        <div class="col-6 col-sm-6 col-md-3 mt-2">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Payment Description </label>
+                            <b class="d-block font14">Pretrial Payment </b> </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3   mt-2">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Arbitrator</label>
+                            <b class="d-block font14">Christopher </b> </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3   mt-2">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Amount </label>
+                            <b class="d-block font14">Pretrial Payment </b> </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3  mt-2">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Invoice Uploaded </label>
+                            <b class="d-block font14">Invoice.pdf <i class="fa fa-download-icon custom-mr-3"> </i> </b> </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3   mt-2">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Payment Status </label>
+                            <b class="d-block font14">Paid </b> </div>
+                        </div>
+                      </div>
+                      <div class="row   pt-2  pb-2 border-dashed-top">
+                        <div class="col-6  col-sm-6 col-md-3  mt-2">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Transaction ID </label>
+                            <b class="d-block font14"> </b>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" value="TS878971" name="Email">
+                          </div>
+                        </div>
+                        <div class="col-6 mt-2 col-md-3 ">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Mode of Transaction </label>
+                            <select class="form-control" id="sel1">
+                              <option>Net Banking</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-6 mt-2 col-md-3 ">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Payment Date </label>
+                            <div class="form-group">
+                              <input type="email" class="form-control pr-5" id="email" value="20-Dec-2020">
+                              <i class="fa fa-pro-calender-grey cal-pos" aria-hidden="true"></i> </div>
+                          </div>
+                        </div>
+                        <div class="col-6 mt-2 col-md-3 ">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Paid Amount(INR) </label>
+                            <input type="email" class="form-control pr-5" id="email" value="50,000">
+                          </div>
+                        </div>
+                        <div class="col-6 mt-2 col-md-6">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Comments </label>
+                            <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit" rows="5"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-6 mt-2 col-md-6">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">Attachment </label>
+                            <div class="form-group">
+                              <div class="mb-0  pt-3 pb-4 border-full-dashed lightgrey-backgroud">
+                                <div class="d-block text-center">
+                                  <p> Drag and Drop Your File here or Click </p>
+                                </div>
+                                <div class="d-block"><a href="#" class="btn btn-secondary no-border d-block offset-3 border-0 rounded-0 logoblue-bg w-50"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload File</a></div>
+                              </div>
+                              <div class="mb-0  pt-1 text-center font12 f-greycolor pb-1">Upload the screenshots of the payments </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-6 pt-3 border-dashed-top">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">
+                            <span class="d-inline-block minus"> - </span>
+                            <label class="pl-2 font14 d-inline-block "> Upload Receipt</label>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group">
+                              <div class="mb-0  pt-3 pb-4 border-full-dashed lightgrey-backgroud">
+                                <div class="d-block text-center">
+                                  <p> Drag and Drop Your File here or Click </p>
+                                </div>
+                                <div class="d-block"><a href="#" class="btn btn-secondary no-border d-block offset-3 border-0 rounded-0 logoblue-bg w-50"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload File</a></div>
+                              </div>
+                              <div class="mb-0  pt-1 text-center font12 f-greycolor pb-1">Upload the screenshots of the payments </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 pt-3 col-md-6 border-dashed-top">
+                          <div class="form-group">
+                            <label for="Claimant Name" class="mb-1">
+                            <span class="d-inline-block minus"> - </span>
+                            <label class="pl-2 font14 d-inline-block"> Upload TDS</label>
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group">
+                              <div class="mb-0  pt-3 pb-4 border-full-dashed lightgrey-backgroud">
+                                <div class="d-block text-center">
+                                  <p> Drag and Drop Your File here or Click </p>
+                                </div>
+                                <div class="d-block"><a href="#" class="btn btn-secondary no-border d-block offset-3 border-0 rounded-0 logoblue-bg w-50"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload File</a></div>
+                              </div>
+                              <div class="mb-0  pt-1 text-center font12 f-greycolor pb-1">Upload the screenshots of the payments </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- /.card-body --> 
+            </div>
+            <!-- /.card --> 
+            
+            <!-- /.row --> 
+            
+            <!-- /.card --> 
+          </div>
+          <!-- /.col --> 
+          
+          <!-- /.col --> 
+        </div>
+        <!-- /.row --> 
+      </div>
+      <!--/. container-fluid --> 
+    </section>
+    <!-- /.content --> 
+  </div>
+  <!-- /.content-wrapper -->
+  
+  <div style="height: 80px;"></div>
+  <footer class="main-footer menuNavigation-footer"> <a href="#">
+    <button class="btn btn-primaries color-white float-right text-upper px-4 py-2 mr-2 font16LH21 font14">Save</button>
+    </a> <a href="#">
+    <button class="btn btn-secondaries color-white float-right text-upper px-4 py-2 mr-3 font16LH21 font14">Cancel</button>
+    </a> </footer>
+  
+  <!-- Main Footer -->
+  <footer class="main-footer"> Copyright &#169; 2021 <a href="/"> CII Center</a>. All Rights Reserved </footer>
+</div>
+<!-- ./wrapper --> 
+
+<!-- jQuery --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/dashboard.js"></script> 
+<script src="js/jquery.dataTables.js"></script> 
+<script src="js/dataTables.bootstrap4.js"></script> 
+<script src="js/clientside.js"></script> 
+<script>
+	    $(window).on("load", function ()
+		{
+            ADR.sideMenuBar();
+		    ADR.gridView();
+            ADR.menuNavigation(); 
+            ADR.addcustomfields();
+	     });
+      
+</script>
+</body>
+</html>
